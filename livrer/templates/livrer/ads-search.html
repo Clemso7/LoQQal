@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% load i18n %}
+
+<section class="inner-banner">
+  <div class="container">
+      <h2 class="inner-banner__title">{% trans "Package status" %}</h2><!-- /.inner-banner__title -->
+      <ul class="list-unstyled thm-breadcrumb">
+          <li><a href="{% url 'home' %}">{% trans "Home" %}</a></li>
+          <li class="active"><a href="#">{% trans "Package status" %}</a></li>
+      </ul><!-- /.list-unstyled -->
+  </div><!-- /.container -->
+</section><!-- /.inner-banner -->
+
+
+<!-- Latest Ads Listing Section Start -->
+<section class="featured section-padding" >
+  <div class="container">
+   
+    {{ business.author.business_name }}
+    <div class="row">
+      
+      {% if ads  %}
+        {% for ad in ads %}
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4" id='centrer'> 
+          <div class="featured-box" >
+            <div class="feature-content">
+              <div class="product">
+                  <a href=""><i class="lni-folder"></i>{{ad.name|truncatechars:5}} </a>
+                  <div class="contient">
+                    <div class="iteme"><i id='clairs' class="adstatus adstatusdeleted">{% trans "In progress" %}</i></div>
+                    <div class="iteme"><i id='clairs' class="adstatus adstatusexpired">{% trans "Picked" %}</i></div>
+                    <div class="iteme"><i id='clairs' class="adstatus adstatusactive">{% trans "Delivered" %}</i> </div>
+                </div>
+              </div>
+              <h4><a href="">{% trans "Package id :" %} {{ ad.id }}</a></h4>
+              <span>{% trans "Requested :" %} {{ ad.published_date|date }}</span>
+              <ul class="address">
+                <li>
+                  [<i class="lni-map-marker"></i>{{ad.author.business_name|truncatechars:5}}
+                </li>
+                  |
+                <li>
+                  <i class="lni-user"></i> {{ad.name|truncatechars:5}}]
+                </li>
+                <li >
+
+                  <h4 class="grandir"><i class="lni-package"></i>{% trans "Status" %} </h3>
+                  {% if ad.is_active == "DELIVERED" %}
+                      <i id='clair' class="adstatus adstatusactive">{% trans "Delivered" %}</i>
+                  {% elif ad.is_active == "PICKED" %}
+                      <i id='clair' class="adstatus adstatusexpired">{% trans "Picked" %}</i>
+                  {% elif ad.is_active == "IN PROGRESS" %}
+                      <i id='clair' class="adstatus adstatusdeleted">{% trans "In progress" %}</i>
+                  {% endif %}
+
+                </li>
+              </ul>
+              <p></p>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      {% else %}
+        <div class="container">
+          <div class="col-lg-12">
+            <h4 class="text-center">{% trans "Sorry! your package's id is wrong" %}</h4>
+          </div>
+        </div>
+      {% endif %}
+      {% if messages %}
+         <div class="error-msg">
+           {% for message in messages %}
+           <p class="error-text text-center">{{ message.tags }}</p>
+           {% endfor %}
+         </div>
+         {% endif %}
+        
+      
+
+    </div>
+  </div>
+</section>
+<!-- Latest Ads Listing Section End -->
+
+
+{% endblock content %}

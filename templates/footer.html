@@ -1,0 +1,103 @@
+{% load static %}
+{% load i18n %}
+<footer class="site-footer">
+  <div class="site-footer__bubble-1"></div><!-- /.site-footer__bubble-1 -->
+  <div class="site-footer__line"></div><!-- /.site-footer__line -->
+  <div class="site-footer__bubble-2"></div><!-- /.site-footer__bubble-2 -->
+  <div class="site-footer__upper">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-2">
+                  <div class="footer-widget footer-widget__about">
+                      <img src="{% static 'assets/images/logo-light.png' %}" width="88" alt="" class="footer-widget__logo">
+                      {% get_current_language as CURRENT_LANGUAGE %}
+                      {% get_available_languages as AVAILABLE_LANGUAGES %}
+                       {% get_language_info_list for AVAILABLE_LANGUAGES as languages %}
+                        <div class="languages">
+                        <p>{% trans "Language" %}:</p>
+                        <ul class="languages">
+                            {% for language in languages %}
+                               <li>
+                                    <a href="/{{ language.code }}/"
+                                        {% if language.code == CURRENT_LANGUAGE %} class="active"{% endif %}>
+                                    {{ language.name_local }}
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                      </p><!-- /.footer-widget__contact -->
+                  </div><!-- /.footer-widget -->
+              </div><!-- /.col-lg-2 -->
+              <div class="col-lg-6 d-flex justify-content-between footer-widget__links-wrap">
+                  <div class="footer-widget">
+                      <h3 class="footer-widget__title">LoQQal</h3><!-- /.footer-widget__title -->
+                      <ul class="footer-widget__links list-unstyled">
+                          <li><a href="{% url 'about' %}">{% trans "About" %}</a></li>
+                          <li><a href="{% url 'privacy-policy' %}">{% trans "Privacy Policy" %}</a></li>
+                      </ul><!-- /.footer-widget__links -->
+                  </div><!-- /.footer-widget -->
+                  <div class="footer-widget">
+                      <h3 class="footer-widget__title">{% trans "Openning hours" %}</h3><!-- /.footer-widget__title -->
+                      <ul class="footer-widget__links list-unstyled">
+                          <li><a >{% trans "Monday to friday : 10 - 17h" %}</a></li>
+                          <li><a >{% trans "Saturday : 10 - 13h" %} </a></li>
+                      </ul><!-- /.footer-widget__links -->
+                  </div><!-- /.footer-widget -->
+                  <div class="footer-widget">
+                      <h3 class="footer-widget__title">{% trans "Links" %}</h3><!-- /.footer-widget__title -->
+                      <ul class="footer-widget__links list-unstyled">    
+                          <li><a href="{% url 'faq' %}">{% trans "Faq" %} </a></li>
+                          <li><a href="{% url 'contact' %}">{% trans "Contact" %}</a></li>
+                      </ul><!-- /.footer-widget__links -->
+                  </div><!-- /.footer-widget -->
+              </div><!-- /.col-lg-6 -->
+              <div class="col-lg-4">
+                  <div class="footer-widget footer-widget__mailchimp">
+                      <h3 class="footer-widget__title">{% trans "Contact" %}</h3><!-- /.footer-widget__title -->
+                      <p class="footer-widget__contact"><a href="tel:438-580-7574">{% trans "Phone" %}: 438 530 7574</a></p>
+                      <!-- /.footer-widget__contact -->
+                      <p class="footer-widget__contact"><a
+                              href="mailto:needhelp@example.com">{% trans "Email"%}: info@loqqal.ca</a>
+                      <div class="mc-form__response"></div><!-- /.mc-form__response -->
+                  </div><!-- /.footer-widget -->
+              </div><!-- /.col-lg-4 -->
+          </div><!-- /.row -->
+      </div><!-- /.container -->
+  </div><!-- /.site-footer__upper -->
+  <div class="site-footer__bottom">
+      <div class="container">
+          <div class="inner-container">
+              <p class="site-footer__copy">Copyright &copy; 2020-{% now "Y" %} <a href="#">loqqal.ca</a>| {% trans "All rights reserved" %}</p>
+              <p class="site-footer__copy">{% trans "Developed by" %} <a href=""  target="blank">Ganemtore</a></p>
+              <!-- /.site-footer__copy -->
+              <div class="site-footer__social">
+                  <a href="https://www.facebook.com/Loqqal-1681955838721872" class="fab fa-facebook"></a>
+                  <a href="#" class="fab fa-twitter"></a>
+                  <a href="https://www.linkedin.com/company/loqqal" class="fab fa-linkedin"></a>
+              </div><!-- /.site-footer__social -->
+          </div><!-- /.inner-container -->
+      </div><!-- /.container -->
+  </div><!-- /.site-footer__bottom -->
+</footer><!-- /.site-footer -->
+</div><!-- /.page-wrapper -->
+
+
+<a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+<script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'assets/js/waypoints.min.js' %}"></script>
+<script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>
+<script src="{% static 'assets/js/TweenMax.min.js' %}"></script>
+<script src="{% static 'assets/js/wow.js' %}"></script>
+<script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'assets/js/jquery.ajaxchimp.min.js' %}"></script>
+<script src="{% static 'assets/js/swiper.min.js' %}"></script>
+<script src="{% static 'assets/js/jquery.easing.min.js' %}"></script>
+<!-- template scripts -->
+<script src="{% static 'assets/js/theme.js' %}"></script>
+
+

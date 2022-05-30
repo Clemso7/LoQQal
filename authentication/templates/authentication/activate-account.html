@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% load i18n %}
+
+<!-- Page Header Start -->
+<section class="inner-banner">
+  <div class="container">
+      <h2 class="inner-banner__title">{% trans "Activated account" %}</h2><!-- /.inner-banner__title -->
+      <ul class="list-unstyled thm-breadcrumb">
+          <li><a href="{% url 'home' %}">{% trans "Home" %}</a></li>
+          <li class="active"><a href="#">{% trans "Account" %} </a></li>
+      </ul><!-- /.list-unstyled -->
+  </div><!-- /.container -->
+</section><!-- /.inner-banner -->
+
+
+
+<!-- Content section Start -->
+<section class="section-padding">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-12 col-md-12 col-xs-12">
+        <h3 class="text-center">{% trans "Thanks for being with us." %}</h3>
+        <h5 class="text-center">
+          {% trans "Your account has been activated successfully. Please, complete" %} <a href="{% url 'profile-settings' %}">{% trans "your informations" %}</a> {% trans "to continue." %}
+        </h5>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Content section End -->
+{% endblock content %}

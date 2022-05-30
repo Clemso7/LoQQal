@@ -1,0 +1,198 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% load i18n %}
+
+
+<!-- Page Header Start -->
+<section class="inner-banner">
+  <div class="container">
+      <h2 class="inner-banner__title">{% trans "Delivery request" %}</h2><!-- /.inner-banner__title -->
+      <ul class="list-unstyled thm-breadcrumb">
+          <li><a href="{% url 'home' %}">{% trans "Home" %}</a></li>
+          <li class="active"><a href="#"> {% trans "Delivery request for individual" %}</a></li>
+      </ul><!-- /.list-unstyled -->
+  </div><!-- /.container -->
+</section><!-- /.inner-banner -->
+<!-- Page Header End -->
+
+
+
+<!-- Start Content -->
+<div id="content" class="section-padding">
+  <div class="container">
+    <div class="row justify-content-center">
+
+
+      <div class="col-lg-5 col-md-12 col-xs-12">
+        {% if request.user.is_authenticated and request.user.author.user_type == 'Individual' %}
+        <div class="row page-content" >
+          <form action="" method="post" class="ads-form" id="ad-post-form">
+
+            <label href="#" title="Normal: $7 | Express: $20" class="bulle">{% trans "Service type" %} <span class="req-aseteric">*</span></label>
+            <select id="service" name="service[]" onkeyup="javascript:isCharSet()" class="form-control ad-post-form" >
+              <option value="Normal">Normal</option>
+              <option value="Express">Express</option>
+            </select>
+            <div class="error-msg">
+              <div id="servicemsg"></div>
+            </div>
+
+            <label href="#" title="{% trans 'Place where package will be picked up' %}" class="bulle"> {% trans "Store or Person name" %}<span class="req-aseteric">*</span></label>
+            <input type="text" id="name" name="name[]" class="form-control ad-post-form" onkeyup="javascript:isCharSet()"
+              placeholder="">
+            <div class="error-msg">
+              <div id="titlemsg"></div>
+            </div>
+
+            <label>{% trans "Your phone" %}<span class="req-aseteric">*</span></label>
+            <input type="text" id="phone" name="phone[]" class="form-control ad-post-form" onkeyup="javascript:isCharSet()" placeholder="">
+            <div class="error-msg">
+              <div id="phonemsg"></div>
+            </div>
+
+            <label> {% trans "Store or person address" %}<span class="req-aseteric">*</span></label>
+            <input type="text" id="autocomplete" name="autocomplete[]" class="form-control ad-post-form"  onkeyup="javascript:isCharSet()" placeholder="">
+            <div class="error-msg">
+              <div id="autocompletemsg"></div>
+            </div>
+
+            <label href="#" class="bulle" title="{% trans 'You can provide all useful information' %}">{% trans "Order number or useful information" %}</label>
+            <textarea rows="6" id="description" name="description[]" class="form-controltext"
+              placeholder=""></textarea>
+            <div class="error-msg">
+              <div id="descriptionmsg"></div>
+            </div>
+            
+      
+          </form>
+        </div>
+        <br/>
+            <button type="button" id="saveBtn" class="check-box" onclick='Javascript:checkEmail();'>{% trans "Send your request" %}</button>
+            
+        <div class="success-msg">
+          <div id="formsuccessmsg" class="text-center"></div>
+        </div>
+
+        <div class="error-msg">
+          <div id="formerrmsg" class="text-center"></div>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Content -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+  
+  
+    
+    var formData = new FormData();
+    
+    
+    $(document).on('click', '#saveBtn', function (e) {
+     
+      
+      if ($('#service').val() === "") {
+        $("#servicemsg").html("<div class='alert alert-danger'>Service type can not be empty</div>");
+      }
+
+      if ($('#name').val() === "") {
+        $("#titlemsg").html("<div class='alert alert-danger'>Name can not be empty</div>");
+      }
+
+      if ($('#autocomplete').val() === "") {
+        $("#autocompletemsg").html("<div class='alert alert-danger'>Address can not be empty</div>");
+      }
+
+      if ($('#phone').val() === "") {
+        $("#phonemsg").html("<div class='alert alert-danger'>You must provide a phone no.</div>");
+      }
+
+      if ($('#email').val() === "@") {
+        $("#emailmsg").html("<div class='alert alert-danger'>You must provide a good email</div>");
+      }
+
+      
+      formData.append('service', $('#service').val())
+      formData.append('name', $('#name').val())
+      formData.append('phone', $('#phone').val())
+      formData.append('autocomplete', $('#autocomplete').val())
+      formData.append('email', $('#email').val())
+      formData.append('description', $('#description').val())
+      formData.append('action', 'post-demands')
+      formData.append('csrfmiddlewaretoken', '{{ csrf_token }}')
+
+      //Disable our button
+      $('#saveBtn').attr("disabled", true);
+
+
+      $.ajax({
+        type: 'POST',
+        url: '{% url "post-demands" %}',
+        data: formData,
+        cache: false,
+        processData: false,
+        contentType: false,
+        enctype: 'multipart/form-data',
+        success: function () {
+          $("#formsuccessmsg").html(
+            "<div class='alert alert-success'>{% trans 'The delivery request has been sent successfully.' %}</div>"
+          );
+          // alert('The request has been posted successfully!')
+          $('#saveBtn').attr("disabled", true); //Ajax request is finished, so we can enable the button again.
+          $('#ad-post-form').each(function () {
+            this.reset()  ; //Here form fields will be cleared.
+          });
+          
+        },
+        
+        error: function (xhr, errmsg, err) {
+          $("#formerrmsg").html(
+            "<div class='alert alert-danger'>{% trans 'You have one or more error. Please provide all required fields to post a request.' %}</div>"
+          );
+          console.log(xhr.status + ":" + xhr.responseText)
+          // alert('Failed to post. Make sure you fill all the fields')
+          
+
+
+        }
+      })
+    })
+    
+    console.log(formData)
+
+  
+let inputElt = document.getElementById('name');
+let inputElt1 = document.getElementById('phone');
+let inputElt2 = document.getElementById('autocomplete');
+let btn = document.getElementById('saveBtn');
+// on commence par desactiver le bouton quand le javascript se charge
+btn.disabled = true;
+
+// ajout d'une fonction appelee des qu'une touche est enfoncee
+function isCharSet() {
+  // on verifie si le champ n'est pas vide alors on desactive le bouton sinon on l'active
+  if (inputElt.value != "" && inputElt1.value != "" && inputElt2.value != "")  {
+    btn.disabled = false;
+  } 
+  else {
+    btn.disabled = true;
+  }  
+    
+  
+}
+
+
+
+ 
+</script>
+<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB2H3hciF_GD53_a0CHteVtdaARdleHDY&callback=initAutocomplete&libraries=places&v=weekly"
+      async
+    >
+</script>
+
+{% endblock content %}

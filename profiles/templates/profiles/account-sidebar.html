@@ -1,0 +1,57 @@
+{% load static %}
+{% load i18n %}
+<!-- Account Sidebar Start -->
+<div class="col-sm-12 col-md-4 col-lg-3 page-sidebar">
+  <aside>
+    <div class="sidebar-box">
+      <div class="user">
+        <figure>
+          {% if request.user.author.profile_pic %}
+          <a href="#"><img style="width: 100px;" src="{{ request.user.author.profile_pic.url }}" alt="" class="rounded-circle"></a>
+          {% else %}
+          <a href="#"><img style="width: 100px;" src="{% static 'assets/images/default-profile-pic.png' %}" alt="" class="rounded-circle"></a>
+          {% endif %}
+        </figure>
+        <div class="usercontent">
+          <h3>{{ user.author.business_name }}</h3>
+        </div>
+        <div class="user-info">
+          <p class="white"><i class="lni-building"></i> {{ user.author.business_address}}</p>
+          
+          <p class="white"><i class="lni-envelope"></i> {% trans "Email" %} @ {{ user.email }}</p>
+          <p class="white"><i class="lni-calendar"></i> {% trans "Joined" %} @ {{ user.date_joined|date }}</p>
+        </div>
+      </div>
+      <nav class="navdashboard">
+        <ul>
+          <li>
+            <a class="active" href="{% url 'dashboard' %}">
+              <i class="lni-dashboard"></i>
+              <span>{% trans "Dashboard" %}</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'profile-settings' %}">
+              <i class="lni-cog"></i>
+              <span>{% trans "Account Settings" %}</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="{% url 'logout' %}">
+              <i class="lni-enter"></i>
+              <span>{% trans "Logout" %}</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'profile-close' %}">
+              <i class="lni-close"></i>
+              <span>{% trans "Account close" %}</span>
+            </a>
+          </li> 
+        </ul>
+      </nav>
+    </div>
+  </aside>
+</div>
+<!-- Account Sidebar End -->

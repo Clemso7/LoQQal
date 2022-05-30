@@ -1,0 +1,564 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% load i18n %}
+
+<!-- /.beginning -->
+<section class="banner-one" id="banner">
+    <div class="container">
+        <div class="banner-one__moc">
+            <img src="{% static 'assets/images/banner-1-moc-1.png' %}" class="moc-image" alt="">           
+            <img src="{% static 'assets/images/banner-line.png' %}" class="banner-one__line" alt="">
+        </div><!-- /.banner-one__moc -->
+        <div class="row justify-content-end">
+            <div class="col-xl-6 col-lg-8">
+                <div class="banner-one__content">
+
+                    <h3 class="banner-one__title">{% blocktrans %} Ecofriendly  <br>
+                        delivery <br>
+                        for everyone  {% endblocktrans %}</h3> <!-- /.banner-one__title -->
+                  <!--  <p class="banner-one__text">{% trans "Because we love nature and we love delivery" %} -->
+                        <br> -- 
+                        <br> ------------------------------------ </p> 
+                    <!-- /.banner-one__text -->
+                    <a href="{% url 'post-ads' %}" class="banner-one__btn thm-btn ">{% trans "Make delivery request" %}</a><!-- /.thm-btn -->
+                    
+                </div><!-- /.banner-one__content -->
+            </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+    
+</section><!-- /.banner-one -->
+<div class="brand-one" id='beau'>
+    <div class="container">
+        <div class="brand-one__carousel owl-carousel owl-theme">
+            <div class="item" id='gai'>
+                <img src="{% static 'assets/images/fleur_sauvage-1.png' %}" alt="">
+            </div><!-- /.item -->
+            <div class="item" id='gai'>
+                <img src="{% static 'assets/images/fleur_sauvage-1.png' %}" alt="">
+            </div><!-- /.item -->
+            <div class="item" id='gai'>
+                <img src="{% static 'assets/images/fleur_sauvage-1.png' %}" alt="">
+            </div><!-- /.item -->
+            <div class="item" id='gai'>
+                <img src="{% static 'assets/images/fleur_sauvage-1.png' %}" alt="">
+            </div><!-- /.item -->
+            <div class="item" id='gai'>
+                <img src="{% static 'assets/images/fleur_sauvage-1.png' %}" alt="">
+            </div><!-- /.item -->
+            <div class="item" id='gai'>
+                <img src="{% static 'assets/images/fleur_sauvage-1.png' %}" alt="">
+            </div><!-- /.item -->
+            <div class="item" id='gai'>
+                <img src="{% static 'assets/images/fleur_sauvage-1.png' %}" alt="">
+            </div><!-- /.item -->
+            <div class="item" id='gai'>
+                <img src="{% static 'assets/images/fleur_sauvage-1.png' %}" alt="">
+            </div><!-- /.item -->
+            <div class="item">
+                <img src="{% static 'assets/images/fleur_sauvage-1.png' %}" alt="">
+            </div><!-- /.item -->
+            <div class="item">
+                <img src="{% static 'assets/images/fleur_sauvage-1.png' %}" alt="">
+            </div><!-- /.item -->
+            <div class="item">
+                <img src="{% static 'assets/images/fleur_sauvage-1.png' %}" alt="">
+            </div><!-- /.item -->
+            <div class="item">
+                <img src="{% static 'assets/images/fleur_sauvage-1.png' %}" alt="">
+            </div><!-- /.item -->
+        </div><!-- /.brand-one__carousel owl-carousel owl-theme -->
+    </div><!-- /.container -->
+</div><!-- /.brand-one -->
+
+        <section class="service-one">
+            <div class="container">
+                <div class="block-title text-center">
+                    <p class="block-title__tag-line">{% trans "Why you should choose us" %}
+                    </p><!-- /.block-title__tag-line -->
+                    <h2 class="block-title__title">{% trans "The Only Delivery Service You Need" %}</h2><!-- /.block-title__title -->
+                </div><!-- /.block-title -->
+                <div class="service-one__content-wrap">
+                    <div class="service-one__single">
+                        <div class="service-one__inner">
+                            <i class="fas fa-bicycle"></i>
+                            <h3 class="service-one__title"><a href="#">{% blocktrans %} Eco-friendly <br> Delivery {% endblocktrans %}</a></h3>
+                            <!-- /.service-one__title -->
+                        </div><!-- /.service-one__inner -->
+                    </div><!-- /.service-one__single -->
+                    <div class="service-one__single">
+                        <div class="service-one__inner">
+                            <i class="fas fa-user-shield"></i>
+                            <h3 class="service-one__title"><a href="#">{% blocktrans %} Secured <br> Delivery  {% endblocktrans %}</a></h3>
+                            <!-- /.service-one__title -->
+                        </div><!-- /.service-one__inner -->
+                    </div><!-- /.service-one__single -->
+                    <div class="service-one__single">
+                        <div class="service-one__inner">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <h3 class="service-one__title"><a href="#">{% blocktrans %} Fast <br> Delivery {% endblocktrans %}</a></h3>
+                            <!-- /.service-one__title -->
+                        </div><!-- /.service-one__inner -->
+                    </div><!-- /.service-one__single -->
+                    <div class="service-one__single">
+                        <div class="service-one__inner">
+                            <i class="fas fa-money-check-alt"></i>
+                            <h3 class="service-one__title"><a href="#">{% blocktrans %} Parcel <br> Insured {% endblocktrans %}</a></h3>
+                            <!-- /.service-one__title -->
+                        </div><!-- /.service-one__inner -->
+                    </div><!-- /.service-one__single -->
+                    <div class="service-one__single">
+                        <div class="service-one__inner">
+                            <i class="fas fa-route"></i>
+                            <h3 class="service-one__title"><a href="#">{% blocktrans %} Tracking <br> System {% endblocktrans %}</a></h3>
+                            <!-- /.service-one__title -->
+                        </div><!-- /.service-one__inner -->
+                    </div><!-- /.service-one__single -->
+                </div><!-- /.service-one__content-wrap -->
+            </div><!-- /.container -->
+        </section><!-- /.service-one -->
+
+        <section class="cta-two" id="features">
+            <div class="container">
+                <div class="cta-two__image">
+                    <img src="{% static 'assets/images/cta-line-1-1.png' %}" class="cta-two__line" alt="">
+                    <img src="{% static 'assets/images/cta-moc-1-1.png' %}" alt="">
+                </div><!-- /.cta-two__image -->
+                <div class="row justify-content-end">
+                    <div class="col-xl-6 col-lg-7">
+                        <div class="cta-two__content">
+                            <div class="block-title text-left">
+                                <p class="block-title__tag-line">{% trans "Areas covered by LoQQal" %}
+
+                                </p><!-- /.block-title__tag-line -->
+                                <h2 class="block-title__title">{% trans "Some areas of Montreal" %}
+                                    </h2><!-- /.block-title__title -->
+                            </div><!-- /.block-title -->
+                            <p class="cta-two__tagline">
+                                <table class="table-fill">
+                                    <thead>
+                                    <tr>
+                                    <th class="text-left">{% trans "Boroughs" %}</th>
+                                    <th class="text-left">{% trans "Zip code" %}</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="table-hover">
+                                    <tr>                                    <td class="text-left">Notre-Dame-de-Grâce</td>
+                                    <td class="text-left">H4A; H4B; H4W</td>
+                                    </tr>
+                                    <tr>
+                                    <td class="text-left">Côte Saint-Luc</td>
+                                    <td class="text-left">H3X; H4V; H4W</td>
+                                    </tr>
+                                    <tr>
+                                    <td class="text-left">Westmount </td>
+                                    <td class="text-left">H3Y; H3Z </td>
+                                    </tr>
+                                    <tr>
+                                    <td class="text-left">Côte-Des-Neiges</td>
+                                    <td class="text-left">H3S;	H3H</td>
+                                    </tr>
+                                    <tr>
+                                    <td class="text-left">Montréal-Ouest </td>
+                                    <td class="text-left">H4B; H4X</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">Hampstead	</td>
+                                        <td class="text-left">H3X </td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+                                </p><!-- /.cta-two__tagline -->
+  
+                            <ul class="list-unstyled cta-two__list">
+                                
+                                <li>
+                                    <i class="cta-two__list-icon fa fa-check"></i>
+                                    <!-- /.cta-two__list-icon fa fa-check -->
+                                    <p>{% trans "What we deliver : Grocery, Clothing," %}
+                                       <br> {% trans "Office supply... ;" %}
+
+                                    </p>
+                                </li>
+                            </ul><!-- /.list-unstyled -->
+                            <a href="{% url 'faq' %}" class="banner-one__btn thm-btn" id='couleur'> {% trans "More informations" %}</a><!-- /.thm-btn -->
+                        </div><!-- /.cta-two__content -->
+                    </div><!-- /.col-lg-6 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.cta-two -->
+
+
+        <section class="cta-three">
+            <div class="container">
+                <div class="cta-three__image">
+                    <img src="{% static 'assets/images/cta-line-1-2.png' %}" class="cta-three__line" alt="">
+                    <img src="{% static 'assets/images/cta-moc-1-2.jpg' %}" alt="">
+                </div><!-- /.cta-two__image -->
+                <div class="row">
+                    <div class="col-xl-6 col-lg-7">
+                        <div class="cta-three__content">
+                            <div class="block-title text-left">
+                                <p class="block-title__tag-line">{% trans "LoQQal Vision" %}
+                                </p><!-- /.block-title__tag-line -->
+                                <h2 class="block-title__title">{% trans "SIMPLE solutions to" %}
+                                     <br>
+                                     {% trans "COMPLEX problems" %}</h2><!-- /.block-title__title -->
+                            </div><!-- /.block-title -->
+                            <p class="cta-three__text" >
+                                {% trans "WE SERVE PEOPLE AND BUSINESSES." %}<br>
+                                {% trans "What is the best we can offer to our community, while we are all facing the challenges related to climate changes and the decline of the local economy?" %}
+                                <br> 
+                                {% trans "Our commitment remains the timeless and effective way to face such great challenges." %}
+                                <br>{% trans "Our moto is to great challenges, great commitment. We work with the heart, which guarantees a high-quality service that meets your expectations." %}
+                                {% trans "Commitment is priceless, which is why we say “simple solutions to complex problems”." %}
+                                <br>{% trans "Commitment is the essence of our business." %}
+                                </p><!-- /.cta-two__tagline -->
+
+                            <a href="{% url 'post-ads' %}" class="banner-one__btn thm-btn">{% trans "Delivery request" %}</a><!-- /.thm-btn -->
+                        </div><!-- /.cta-two__content -->
+                    </div><!-- /.col-lg-5 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.cta-three -->
+
+        <section class="fact-one">
+            <div class="container">
+                <div class="inner-container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="fact-one__single color-1">
+                                <h3 class="fact-one__title counter">{{livraison_T}}</h3><!-- /.fact-one__title -->
+                                <p class="fact-one__text">{% trans "Packages delivered" %}</p><!-- /.fact-one__text -->
+                            </div><!-- /.fact-one__single -->
+                        </div><!-- /.col-lg-3 -->
+                        <div class=" col-sm-4">
+                            <div class="fact-one__single color-2">
+                                <h3 class="fact-one__title counter">{{km_T}}</h3><!-- /.fact-one__title -->
+                                <p class="fact-one__text">{% trans "Number of km driven" %}</p><!-- /.fact-one__text -->
+                            </div><!-- /.fact-one__single -->
+                        </div><!-- /.col-lg-3 -->
+                        <div class=" col-sm-4">
+                            <div class="fact-one__single color-3">
+                                <h3 class="fact-one__title counter">{{CO2}} </h3><!-- /.fact-one__title -->
+                                <p class="fact-one__text">{% trans "g of CO2 less" %}</p><!-- /.fact-one__text -->
+                            </div><!-- /.fact-one__single -->
+                        </div><!-- /.col-lg-3 -->
+                <!--        <div class="col-lg-3 col-md-6">
+                            <div class="fact-one__single color-4">
+                                <h3 class="fact-one__title counter">200</h3><!-- /.fact-one__title -->
+                    <!--            <p class="fact-one__text">Awards</p><!-- /.fact-one__text -->
+                   <!--         </div><!-- /.fact-one__single -->
+                        </div><!-- /.col-lg-3 -->
+                    </div><!-- /.row -->
+                </div><!-- /.inner-container -->
+            </div><!-- /.container -->
+        </section><!-- /.fact-one -->
+
+        
+    <!--    <section class="app-shot-one" id="screenshots">
+            <div class="container-fluid">
+                <div class="block-title text-center">
+                    <p class="block-title__tag-line">Checkout App Interface </p><!-- /.block-title__tag-line -->
+                <!--    <h2 class="block-title__title">App Screenshots</h2><!-- /.block-title__title -->
+            <!--    </div><!-- /.block-title -->
+            <!--    <div class="app-shot-one__carousel owl-theme owl-carousel">
+                    <div class="item">
+                        <img src="{% static 'assets/images/app-shot-1-1.jpg' %}" alt="">
+                    </div><!-- /.item -->
+            <!--        <div class="item">
+                        <img src="{% static 'assets/images/app-shot-1-2.jpg' %}" alt="">
+                    </div><!-- /.item -->
+            <!--        <div class="item">
+                        <img src="{% static 'assets/images/app-shot-1-3.jpg' %}" alt="">
+                    </div><!-- /.item -->
+            <!--        <div class="item">
+                        <img src="{% static 'assets/images/app-shot-1-4.jpg' %}" alt="">
+                    </div><!-- /.item -->
+            <!--        <div class="item">
+                        <img src="{% static 'assets/images/app-shot-1-5.jpg' %}" alt="">
+                    </div><!-- /.item -->
+            <!--        <div class="item">
+                        <img src="{% static 'assets/images/app-shot-1-1.jpg' %}" alt="">
+                    </div><!-- /.item -->
+            <!--        <div class="item">
+                        <img src="{% static 'assets/images/app-shot-1-2.jpg' %}" alt="">
+                    </div><!-- /.item -->
+            <!--        <div class="item">
+                        <img src="{% static 'assets/images/app-shot-1-3.jpg' %}" alt="">
+                    </div><!-- /.item -->
+            <!--        <div class="item">
+                        <img src="{% static 'assets/images/app-shot-1-4.jpg' %}" alt="">
+                    </div><!-- /.item -->
+            <!--        <div class="item">
+                        <img src="{% static 'assets/images/app-shot-1-5.jpg' %}" alt="">
+                    </div><!-- /.item -->
+            <!--        <div class="item">
+                        <img src="{% static 'assets/images/app-shot-1-1.jpg' %}" alt="">
+                    </div><!-- /.item -->
+            <!--        <div class="item">
+                        <img src="{% static 'assets/images/app-shot-1-2.jpg' %}" alt="">
+                    </div><!-- /.item -->
+            <!--        <div class="item">
+                        <img src="{% static 'assets/images/app-shot-1-3.jpg' %}" alt="">
+                    </div><!-- /.item -->
+            <!--        <div class="item">
+                        <img src="{% static 'assets/images/app-shot-1-4.jpg' %}" alt="">
+                    </div><!-- /.item -->
+            <!--        <div class="item">
+                        <img src="{% static 'assets/images/app-shot-1-5.jpg' %}" alt="">
+                    </div><!-- /.item -->
+            <!--    </div><!-- /.app-shot-one__carousel owl-theme owl-carousel -->
+        <!--    </div><!-- /.container-fluid -->
+    <!--    </section><!-- /.app-shot-one -->
+
+       
+
+
+<!--        <section class="testimonials-one">
+            <div class="container">
+                <div class="inner-container">
+                    <div class="testimonials-one__carousel">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <div class="testimonials-one__thumb">
+                                            <img src="{% static 'assets/images/testi-1-1.jpg' %}" alt="">
+                                        </div><!-- /.testimonials-one__thumb -->
+                        <!--            </div><!-- /.col-lg-3 -->
+                        <!--            <div class="col-lg-9">
+                                        <div class="testimonials-one__content">
+                                            <p class="testimonials-one__text">This is due to their excellent service,
+                                                competitive
+                                                pricing and
+                                                customer support. It’s throughly refresing to get such a personal touch.
+                                            </p>
+                                            <!-- /.testimonials-one__text -->
+                        <!--                    <h3 class="testimonials-one__name">Maurice Salazar</h3>
+                                            <!-- /.testimonials-one__name -->
+                    <!--                    </div><!-- /.testimonials-one__content -->
+                <!--                    </div><!-- /.col-lg-9 -->
+            <!--                    </div><!-- /.row -->
+        <!--                    </div><!-- /.swiper-slide -->
+        <!--                    <div class="swiper-slide">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <div class="testimonials-one__thumb">
+                                            <img src="{% static 'assets/images/testi-1-2.jpg' %}" alt="">
+                                        </div><!-- /.testimonials-one__thumb -->
+                <!--                    </div><!-- /.col-lg-3 -->
+                <!--                    <div class="col-lg-9">
+                                        <div class="testimonials-one__content">
+                                            <p class="testimonials-one__text">This is due to their excellent service,
+                                                competitive
+                                                pricing and
+                                                customer support. It’s throughly refresing to get such a personal touch.
+                                            </p>
+                                            <!-- /.testimonials-one__text -->
+                            <!--                <h3 class="testimonials-one__name">Maurice Salazar</h3>
+                                            <!-- /.testimonials-one__name -->
+                            <!--            </div><!-- /.testimonials-one__content -->
+                        <!--            </div><!-- /.col-lg-9 -->
+                <!--                </div><!-- /.row -->
+                <!--            </div><!-- /.swiper-slide -->
+                <!--            <div class="swiper-slide">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <div class="testimonials-one__thumb">
+                                            <img src="{% static 'assets/images/testi-1-3.jpg' %}" alt="">
+                                        </div><!-- /.testimonials-one__thumb -->
+                        <!--            </div><!-- /.col-lg-3 -->
+                        <!--            <div class="col-lg-9">
+                                        <div class="testimonials-one__content">
+                                            <p class="testimonials-one__text">This is due to their excellent service,
+                                                competitive
+                                                pricing and
+                                                customer support. It’s throughly refresing to get such a personal touch.
+                                            </p>
+                                            <!-- /.testimonials-one__text -->
+                            <!--                <h3 class="testimonials-one__name">Maurice Salazar</h3>
+                                            <!-- /.testimonials-one__name -->
+                                <!--        </div><!-- /.testimonials-one__content -->
+                        <!--            </div><!-- /.col-lg-9 -->
+                        <!--        </div><!-- /.row -->
+                    <!--        </div><!-- /.swiper-slide -->
+                <!--        </div><!-- /.swiper-wrapper -->
+        <!--            </div><!-- /.testimonials-one__carousel -->
+        <!--        </div><!-- /.inner-container -->
+
+    <!--            <div class="testimonials-one__thumb-carousel">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="{% static 'assets/images/testi-1-1-thumb.png' %}" alt="">
+                        </div><!-- /.swiper-slide -->
+                <!--        <div class="swiper-slide">
+                            <img src="{% static 'assets/images/testi-1-2-thumb.png' %}" alt="">
+                        </div><!-- /.swiper-slide -->
+                <!--        <div class="swiper-slide">
+                            <img src="{% static 'assets/images/testi-1-3-thumb.png' %}" alt="">
+                        </div><!-- /.swiper-slide -->
+            <!--        </div><!-- /.swiper-wrapper -->
+        <!--        </div><!-- /.testimonials-one__thumb-carousel -->
+    <!--        </div><!-- /.container -->
+<!--        </section><!-- /.testimonials-one -->
+    <!--    <section class="pricing-one" id="pricing">
+            <div class="container">
+                <div class="block-title text-center">
+                    <p class="block-title__tag-line">Pricing Tables
+                    </p><!-- /.block-title__tag-line -->
+        <!--            <h2 class="block-title__title">Choose Pricing Plans</h2><!-- /.block-title__title -->
+        <!--        </div><!-- /.block-title -->
+        <!--        <div class="row">
+        <!--            <div class="col-lg-4">
+                        <div class="pricing-one__single color-1 wow fadeInDown" data-wow-duration="1500ms">
+                            <div class="pricing-one__top">
+                                <h3 class="pricing-one__amount">$20.00 </h3><!-- /.pricing-one__amount -->
+                <!--                <p class="pricing-one__name">Basic Pack</p><!-- /.pricing-one__name -->
+                <!--            </div><!-- /.pricing-one__top -->
+                <!--            <ul class="list-unstyled pricing-one__list">
+                                <li>Extra features</li>
+                                <li>Lifetime free support</li>
+                                <li>Upgrate options</li>
+                                <li>Full access</li>
+                            </ul><!-- /.list-unstyled pricing-one__list -->
+                <!--            <a href="#" class="thm-btn pricing-one__btn">Purchase</a><!-- /.thm-btn pricing-one__btn -->
+        <!--                </div><!-- /.pricing-one__single -->
+        <!--            </div><!-- /.col-lg-4 -->
+        <!--            <div class="col-lg-4">
+                        <div class="pricing-one__single color-2 wow fadeInUp" data-wow-duration="1500ms">
+                            <div class="pricing-one__top">
+                                <h3 class="pricing-one__amount">$30.00 </h3><!-- /.pricing-one__amount -->
+                <!--                <p class="pricing-one__name">Standard Pack</p><!-- /.pricing-one__name -->
+                <!--            </div><!-- /.pricing-one__top -->
+                <!--            <ul class="list-unstyled pricing-one__list">
+                                <li>Extra features</li>
+                                <li>Lifetime free support</li>
+                                <li>Upgrate options</li>
+                                <li>Full access</li>
+                            </ul><!-- /.list-unstyled pricing-one__list -->
+            <!--                <a href="#" class="thm-btn pricing-one__btn">Purchase</a><!-- /.thm-btn pricing-one__btn -->
+            <!--            </div><!-- /.pricing-one__single -->
+        <!--            </div><!-- /.col-lg-4 -->
+        <!--            <div class="col-lg-4">
+                        <div class="pricing-one__single color-3 wow fadeInDown" data-wow-duration="1500ms">
+                            <div class="pricing-one__top">
+                                <h3 class="pricing-one__amount">$40.00 </h3><!-- /.pricing-one__amount -->
+        <!--                        <p class="pricing-one__name">Professional Pack</p><!-- /.pricing-one__name -->
+        <!--                    </div><!-- /.pricing-one__top -->
+        <!--                    <ul class="list-unstyled pricing-one__list">
+                                <li>Extra features</li>
+                                <li>Lifetime free support</li>
+                                <li>Upgrate options</li>
+                                <li>Full access</li>
+                            </ul><!-- /.list-unstyled pricing-one__list -->
+            <!--                <a href="#" class="thm-btn pricing-one__btn">Purchase</a><!-- /.thm-btn pricing-one__btn -->
+            <!--            </div><!-- /.pricing-one__single -->
+        <!--            </div><!-- /.col-lg-4 -->
+        <!--        </div><!-- /.row -->
+    <!--        </div><!-- /.container -->
+    <!--    </section><!-- /.pricing-one -->
+    <!--    <section class="video-one" id="video">
+            <div class="container">
+                <div class="video-one__box wow fadeInUp" data-wow-duration="1500ms">
+                    <img src="{% static 'assets/images/video-1-1.jpg' %}" alt="">
+                    <div class="video-one__content">
+                        <a href="https://www.youtube.com/watch?v=coI_aT4BDNA" class="video-popup video-one__btn"><i
+                                class="fa fa-play"></i><!-- /.fa fa-play --></a>
+                        <!-- /.video-popup -->
+                <!--        <h2 class="video-one__title">Watch Our Video</h2><!-- /.video-one__title -->
+            <!--        </div><!-- /.video-one__content -->
+        <!--        </div><!-- /.video-one__box -->
+    <!--        </div><!-- /.container -->
+<!--        </section><!-- /.video-one -->
+
+<!--        <section class="blog-one blog-one__home thm-gray-bg" id="news">
+            <div class="container">
+                <div class="block-title text-center">
+                    <p class="block-title__tag-line">Checkout Latest Posts </p><!-- /.block-title__tag-line -->
+            <!--        <h2 class="block-title__title">News & Articles</h2><!-- /.block-title__title -->
+        <!--        </div><!-- /.block-title -->
+        <!--        <div class="row">
+                    <div class="col-lg-4 col-md-12 col-sm-12 wow fadeInUp" data-wow-duration="1500ms">
+                        <div class="blog-one__single">
+                            <div class="blog-one__image">
+                                <img src="{% static 'assets/images/blog-1-1.jpg' %}" alt="">
+                                <a class="blog-one__more-link" href="blog-details.html"><i class="fa fa-link"></i>
+                                    <!-- /.fa fa-link --></a>
+                    <!--        </div><!-- /.blog-one__image -->
+                        <!--    <div class="blog-one__content">
+                                <ul class="list-unstyled blog-one__meta">
+                                    <li><a href="#">22 Oct, 2019</a></li>
+                                    <li><a href="#">2 Comments</a></li>
+                                </ul><!-- /.list-unstyled -->
+                        <!--        <h3 class="blog-one__title">
+                                    <a href="blog-details.html">Pre and post launch mobile app marketing pitfalls to
+                                        avoid</a>
+                                </h3><!-- /.blog-one__title -->
+                        <!--        <a href="blog-details.html" class="blog-one__link">Read More</a>
+                                <!-- /.blog-one__link -->
+                <!--            </div><!-- /.blog-one__content -->
+                <!--        </div><!-- /.blog-one__single -->
+            <!--        </div><!-- /.col-lg-4 -->
+        <!--            <div class="col-lg-4 col-md-12 col-sm-12 wow fadeInDown" data-wow-duration="1500ms">
+                        <div class="blog-one__single">
+                            <div class="blog-one__image">
+                                <img src="{% static 'assets/images/blog-1-2.jpg' %}" alt="">
+                                <a class="blog-one__more-link" href="blog-details.html"><i class="fa fa-link"></i>
+                                    <!-- /.fa fa-link --></a>
+                    <!--        </div><!-- /.blog-one__image -->
+                        <!--    <div class="blog-one__content">
+                                <ul class="list-unstyled blog-one__meta">
+                                    <li><a href="#">22 Oct, 2019</a></li>
+                                    <li><a href="#">2 Comments</a></li>
+                                </ul><!-- /.list-unstyled -->
+                        <!--        <h3 class="blog-one__title">
+                                    <a href="blog-details.html">It is all exactly as i said, but i don't like it let's
+                                        unpack
+                                        that</a>
+                                </h3><!-- /.blog-one__title -->
+                            <!--    <a href="blog-details.html" class="blog-one__link">Read More</a>
+                                <!-- /.blog-one__link -->
+                        <!--    </div><!-- /.blog-one__content -->
+                <!--        </div><!-- /.blog-one__single -->
+            <!--        </div><!-- /.col-lg-4 -->
+            <!--        <div class="col-lg-4 col-md-12 col-sm-12 wow fadeInUp" data-wow-duration="1500ms">
+                        <div class="blog-one__single">
+                            <div class="blog-one__image">
+                                <img src="{% static 'assets/images/blog-1-3.jpg' %}" alt="">
+                                <a class="blog-one__more-link" href="blog-details.html"><i class="fa fa-link"></i>
+                                    <!-- /.fa fa-link --></a>
+                    <!--        </div><!-- /.blog-one__image -->
+                    <!--        <div class="blog-one__content">
+                                <ul class="list-unstyled blog-one__meta">
+                                    <li><a href="#">22 Oct, 2019</a></li>
+                                    <li><a href="#">2 Comments</a></li>
+                                </ul><!-- /.list-unstyled -->
+                        <!--        <h3 class="blog-one__title">
+                                    <a href="blog-details.html">I just wanted to give you a heads-up, or this you feel
+                                        you
+                                        would</a>
+                                </h3><!-- /.blog-one__title -->
+                        <!--        <a href="blog-details.html" class="blog-one__link">Read More</a>
+                                <!-- /.blog-one__link -->
+                    <!--        </div><!-- /.blog-one__content -->
+                <!--        </div><!-- /.blog-one__single -->
+            <!--        </div><!-- /.col-lg-4 -->
+        <!--        </div><!-- /.row -->
+    <!--        </div><!-- /.container -->
+<!--        </section><!-- /.blog-one blog-one__home -->
+
+        <section class="cta-one">
+            <div class="container text-center">
+                <h3 class="block-title__title">{% trans "Call us today & " %}<br>
+                    {% trans "Discover Possibilities for you or your business." %} </h3><!-- /.block-title__title -->
+                <p class="cta-one__text">{% trans "and get started with 2 deliveries for free for you or your business" %}</p>
+                <!-- /.cta-one__text -->
+                <a href="{% url 'signup' %}" class="banner-one__btn thm-btn ">{% trans "Register" %}</a><!-- /.thm-btn -->
+            </div><!-- /.container -->
+        </section><!-- /.cta-one -->
+        
+        
+
+{% endblock content %}

@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% load i18n %}
+
+    <!-- Page Header Start -->
+    <section class="inner-banner">
+      <div class="container">
+          <h2 class="inner-banner__title">{% trans "Register" %}</h2><!-- /.inner-banner__title -->
+          <ul class="list-unstyled thm-breadcrumb">
+              <li><a href="{% url 'home' %}">{% trans "Home" %}</a></li>
+              <li class="active"><a href="#">{% trans "Join Us" %}</a></li>
+          </ul><!-- /.list-unstyled -->
+      </div><!-- /.container -->
+    </section><!-- /.inner-banner -->
+
+
+    <!-- Page Header End -->  
+
+    <!-- Content section Start --> 
+    <section class="register section-padding" id="nere">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-5 col-md-12 col-xs-12">
+            <div class="register-form login-area">
+              
+              <form method="POST" class="login-form">
+                {% csrf_token %}
+                <div class="form-group">
+                  <div class="input-icon">
+                    <!-- <input type="text" id="Name" class="form-control" name="email" placeholder="Username"> -->
+                     {{ reg_form.username }}
+                    {{ reg_form.username.errors }}
+                  </div>
+                </div> 
+                <div class="form-group">
+                  <div class="input-icon">
+                    <!-- <input type="text" id="sender-email" class="form-control" name="email" placeholder="Email Address"> -->
+                    {{ reg_form.email }}
+                    {{ reg_form.email.errors }}
+                    
+                  </div>
+                </div> 
+                <div class="form-group">
+                  <div class="input-icon">
+                    <!-- <input type="password" class="form-control" placeholder="Password"> -->
+                    {{ reg_form.password1 }}
+                    {{ reg_form.password1.errors }}
+                  </div>
+                </div>  
+                <div class="form-group">
+                  <div class="input-icon">
+                    <!-- <input type="password" class="form-control" placeholder="Retype Password"> -->
+                    {{ reg_form.password2 }}
+                    {{ reg_form.password2.errors }}
+                  </div>
+                </div>  
+                <div class="signup-notice mb-3"> 
+                    <p class="text-center">{% trans "By registering, you accept our" %} <a href="{% url 'privacy-policy' %}">{% trans "Terms & Conditions" %}</a> </p>
+                  </div>
+                </div>   
+                <div class="text-center">
+                  <button type="submit" class="check-box">{% trans "Register" %}</button>
+                </div>
+              </form>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Content section End --> 
+
+    {% endblock content %}

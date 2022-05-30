@@ -1,0 +1,1333 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-02-14 23:09-0500\n"
+"PO-Revision-Date: 2022-02-14 23:12-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: .\authentication\forms.py:19
+#: .\authentication\templates\authentication\login.html:40
+msgid "Username"
+msgstr "Nom d'utilisateur"
+
+#: .\authentication\forms.py:26 .\authentication\forms.py:90
+#: .\authentication\templates\authentication\login.html:46
+msgid "Password"
+msgstr "Mot de passe"
+
+#: .\authentication\forms.py:36 .\authentication\forms.py:99
+msgid "Confirm password"
+msgstr "Confirmer le mot de passe"
+
+#: .\authentication\forms.py:48 .\authentication\forms.py:73
+#: .\authentication\forms.py:125
+msgid "Email Address"
+msgstr "Courriel"
+
+#: .\authentication\forms.py:63
+msgid "This Email address is already in use."
+msgstr "Cette adresse e-mail est déjà utilisée."
+
+#: .\authentication\forms.py:81
+msgid "There is no user registered with the specified email address!"
+msgstr "Il n’y a pas d’utilisateur enregistré avec l’adresse e-mail spécifiée!"
+
+#: .\authentication\forms.py:109
+msgid "First Name"
+msgstr "Prénom"
+
+#: .\authentication\forms.py:117
+msgid "Last Name"
+msgstr "Nom"
+
+#: .\authentication\forms.py:146
+msgid "individual or compagny"
+msgstr "particulier ou entreprise"
+
+#: .\authentication\forms.py:154
+msgid "Business name or username"
+msgstr "Nom de l’entreprise ou nom d’utilisateur"
+
+#: .\authentication\forms.py:162 .\delivery\models.py:31
+msgid "Business or personal phone"
+msgstr "Téléphone professionnel ou personnel"
+
+#: .\authentication\forms.py:170 .\delivery\models.py:32
+msgid "Business or home address"
+msgstr "Adresse professionnelle ou personnelle"
+
+#: .\authentication\templates\authentication\activate-account.html:9
+msgid "Activated account"
+msgstr "Compte activé"
+
+#: .\authentication\templates\authentication\activate-account.html:11
+#: .\authentication\templates\authentication\login.html:10
+#: .\authentication\templates\authentication\password-reset-complete.html:10
+#: .\authentication\templates\authentication\password-reset-confirm.html:10
+#: .\authentication\templates\authentication\password-reset-message.html:10
+#: .\authentication\templates\authentication\password-reset.html:10
+#: .\authentication\templates\authentication\signup.html:11
+#: .\delivery\templates\delivery\post-ads.html:11
+#: .\delivery\templates\delivery\post-demands.html:12
+#: .\livrer\templates\livrer\about.html:10
+#: .\livrer\templates\livrer\ads-search.html:10
+#: .\livrer\templates\livrer\contact.html:11
+#: .\livrer\templates\livrer\faq.html:10
+#: .\livrer\templates\livrer\privacy-policy.html:11
+#: .\profiles\templates\profiles\account-close.html:10
+#: .\profiles\templates\profiles\account-dashboard.html:10
+#: .\profiles\templates\profiles\account-setting.html:10
+#: .\templates\404.html:10 .\templates\header.html:101
+msgid "Home"
+msgstr "Accueil"
+
+#: .\authentication\templates\authentication\activate-account.html:12
+msgid "Account"
+msgstr "Compte"
+
+#: .\authentication\templates\authentication\activate-account.html:24
+msgid "Thanks for being with us."
+msgstr "Merci de nous rejoindre."
+
+#: .\authentication\templates\authentication\activate-account.html:26
+msgid "Your account has been activated successfully. Please, complete"
+msgstr "Votre compte a été activé avec succès. S’il vous plaît, complétez"
+
+#: .\authentication\templates\authentication\activate-account.html:26
+msgid "your informations"
+msgstr "vos informations"
+
+#: .\authentication\templates\authentication\activate-account.html:26
+msgid "to continue."
+msgstr "pour continuer."
+
+#: .\authentication\templates\authentication\confirm-email.html:5
+msgid "Hi"
+msgstr "Bonjour"
+
+#: .\authentication\templates\authentication\confirm-email.html:7
+msgid "Thanks for your registration with LoQQal."
+msgstr "Merci de votre inscription à LoQQal."
+
+#: .\authentication\templates\authentication\confirm-email.html:9
+msgid "Please click on the link below to confirm your registration."
+msgstr ""
+"Veuillez cliquer sur le lien ci-dessous pour confirmer votre inscription."
+
+#: .\authentication\templates\authentication\confirm-email.html:13
+msgid "If you think, it's not you, then just ignore this email."
+msgstr ""
+"Si vous pensez que ce n’est pas vous, alors ignorez simplement cet e-mail."
+
+#: .\authentication\templates\authentication\login.html:8
+#: .\authentication\templates\authentication\login.html:11
+#: .\authentication\templates\authentication\login.html:58
+#: .\authentication\templates\authentication\password-reset-complete.html:11
+#: .\authentication\templates\authentication\password-reset-complete.html:24
+#: .\templates\header.html:137
+msgid "Login"
+msgstr "Connexion"
+
+#: .\authentication\templates\authentication\login.html:51
+msgid "Don't have an account?"
+msgstr "Vous n'avez pas de compte?"
+
+#: .\authentication\templates\authentication\login.html:51
+msgid "Sign Up"
+msgstr "S'inscrire"
+
+#: .\authentication\templates\authentication\login.html:54
+msgid "Forgot Password?"
+msgstr "Mot de passe oublié ?"
+
+#: .\authentication\templates\authentication\password-reset-complete.html:8
+msgid "Message"
+msgstr "Message"
+
+#: .\authentication\templates\authentication\password-reset-complete.html:22
+msgid "We've set you up with a new password."
+msgstr "Nous vous avons configuré un nouveau mot de passe."
+
+#: .\authentication\templates\authentication\password-reset-complete.html:24
+msgid "You may go ahead and"
+msgstr "Vous pouvez aller de l’avant et"
+
+#: .\authentication\templates\authentication\password-reset-complete.html:24
+msgid "now"
+msgstr "maintenant"
+
+#: .\authentication\templates\authentication\password-reset-confirm.html:8
+#: .\authentication\templates\authentication\password-reset-message.html:8
+#: .\authentication\templates\authentication\password-reset.html:8
+msgid "Reset password"
+msgstr "Réinitialiser le mot de passe"
+
+#: .\authentication\templates\authentication\password-reset-confirm.html:11
+#: .\authentication\templates\authentication\password-reset-message.html:11
+msgid "Reset"
+msgstr "Réinitialiser"
+
+#: .\authentication\templates\authentication\password-reset-confirm.html:24
+msgid "Enter your new password."
+msgstr "Entrez votre nouveau mot de passe."
+
+#: .\authentication\templates\authentication\password-reset-confirm.html:26
+msgid ""
+"Please enter your new password twice so we can verify you typed it in "
+"correctly."
+msgstr ""
+"Entrer votre nouveau mot de passe deux fois afin de vérifier que vous l'avez "
+"tapé correctement."
+
+#: .\authentication\templates\authentication\password-reset-confirm.html:34
+msgid "Update Password"
+msgstr "Mettre à jour le mot de passe"
+
+#: .\authentication\templates\authentication\password-reset-message.html:24
+msgid "Password reset confirmation sent"
+msgstr "Confirmation de réinitialisation du mot de passe envoyée"
+
+#: .\authentication\templates\authentication\password-reset-message.html:26
+msgid "We’ve emailed you instructions for re-setting your password"
+msgstr ""
+"Nous vous avons envoyé par e-mail des instructions pour redéfinir votre mot "
+"de passe"
+
+#: .\authentication\templates\authentication\password-reset-message.html:29
+msgid "If you don’t receive an email, please check your spam folder."
+msgstr "Si vous ne recevez pas d’e-mail, veuillez vérifier votre dossier spam."
+
+#: .\authentication\templates\authentication\password-reset.html:11
+msgid "Reset "
+msgstr "Réinitialiser "
+
+#: .\authentication\templates\authentication\password-reset.html:23
+msgid "Did you forget your password?"
+msgstr "Avez-vous oublié votre mot de passe?"
+
+#: .\authentication\templates\authentication\password-reset.html:25
+msgid ""
+"Enter your email address registered with us, and we'll send email "
+"instructions for setting a new one."
+msgstr ""
+"Entrez votre adresse e-mail enregistrée auprès de nous et nous vous "
+"enverrons des instructions par e-mail pour en définir une nouvelle."
+
+#: .\authentication\templates\authentication\password-reset.html:33
+msgid "Reset Password"
+msgstr "Réinitialiser le mot de passe"
+
+#: .\authentication\templates\authentication\signup-success.html:14
+#: .\livrer\templates\livrer\demand-success.html:14
+msgid "Please check your email."
+msgstr "Veuillez vérifiez votre courriel."
+
+#: .\authentication\templates\authentication\signup-success.html:16
+#: .\livrer\templates\livrer\demand-success.html:16
+msgid ""
+"We’ve sent a message to your email with a link to activate your account."
+msgstr ""
+"Nous avons envoyé un message à votre adresse e-mail avec un lien pour "
+"activer votre compte."
+
+#: .\authentication\templates\authentication\signup.html:9
+#: .\authentication\templates\authentication\signup.html:63
+#: .\livrer\templates\livrer\index.html:558
+msgid "Register"
+msgstr "S'inscrire"
+
+#: .\authentication\templates\authentication\signup.html:12
+msgid "Join Us"
+msgstr "Rejoignez-nous"
+
+#: .\authentication\templates\authentication\signup.html:59
+msgid "By registering, you accept our"
+msgstr "En vous inscrivant, vous acceptez nos"
+
+#: .\authentication\templates\authentication\signup.html:59
+msgid "Terms & Conditions"
+msgstr "Termes & Conditions"
+
+#: .\authentication\views.py:33
+msgid "Confirm your LoQQal account"
+msgstr "Confirmez votre compte LoQQal"
+
+#: .\authentication\views.py:71
+msgid "Invalid activation link. Please contact support."
+msgstr "Lien d’activation non valide. Veuillez contacter le support."
+
+#: .\authentication\views.py:86
+msgid "Oops! Username or Password is invalid. Please try again."
+msgstr ""
+"Oups! Le nom d’utilisateur ou le mot de passe n’est pas valide. Veuillez "
+"réessayer."
+
+#: .\delivery\forms.py:21 .\delivery\models.py:51
+msgid "Type of delivery"
+msgstr "Type de livraison"
+
+#: .\delivery\forms.py:27 .\delivery\templates\delivery\post-ads.html:40
+msgid "Consignee name"
+msgstr "Nom du bénéficiaire"
+
+#: .\delivery\forms.py:35 .\delivery\templates\delivery\post-ads.html:47
+msgid "Consignee phone"
+msgstr "Téléphone du bénéficiaire"
+
+#: .\delivery\forms.py:43
+msgid "Consignee address"
+msgstr "Adresse du bénéficiaire"
+
+#: .\delivery\forms.py:50
+msgid "Consignee email"
+msgstr "Courriel du bénéficiaire"
+
+#: .\delivery\models.py:28
+msgid "Person or Compagny"
+msgstr "Individu ou Entreprise"
+
+#: .\delivery\models.py:29
+msgid "Picture"
+msgstr "Photo"
+
+#: .\delivery\models.py:30
+msgid "Business name or Username"
+msgstr "Nom de l’entreprise ou nom d’utilisateur"
+
+#: .\delivery\models.py:52
+msgid "Full name"
+msgstr "Nom complet"
+
+#: .\delivery\models.py:53 .\livrer\templates\livrer\contact.html:55
+#: .\profiles\templates\profiles\account-dashboard.html:102
+#: .\templates\footer.html:58
+msgid "Phone"
+msgstr "Téléphone"
+
+#: .\delivery\models.py:54 .\livrer\templates\livrer\contact.html:36
+#: .\profiles\templates\profiles\account-dashboard.html:101
+msgid "Address"
+msgstr "Adresse"
+
+#: .\delivery\models.py:55
+#: .\profiles\templates\profiles\account-sidebar.html:21
+#: .\templates\footer.html:61
+msgid "Email"
+msgstr "Courriel"
+
+#: .\delivery\models.py:56
+msgid "Description"
+msgstr "Description"
+
+#: .\delivery\templates\delivery\post-ads.html:9
+#: .\delivery\templates\delivery\post-demands.html:10
+#: .\livrer\templates\livrer\index.html:219
+#: .\profiles\templates\profiles\account-dashboard.html:79
+#: .\templates\header.html:105
+msgid "Delivery request"
+msgstr "Demande de livraison"
+
+#: .\delivery\templates\delivery\post-ads.html:12
+msgid "Delivery request for business"
+msgstr "Demande de livraison pour entreprise"
+
+#: .\delivery\templates\delivery\post-ads.html:31
+#: .\delivery\templates\delivery\post-demands.html:32
+msgid "Service type"
+msgstr "Type de service"
+
+#: .\delivery\templates\delivery\post-ads.html:53
+msgid "Consignee Address"
+msgstr "Adresse du bénéficiaire"
+
+#: .\delivery\templates\delivery\post-ads.html:59
+msgid "To send a notification at your customer"
+msgstr "Pour envoyer une notification à votre client"
+
+#: .\delivery\templates\delivery\post-ads.html:59
+msgid "Consignee Email"
+msgstr "Courriel du bénéficiaire"
+
+#: .\delivery\templates\delivery\post-ads.html:76
+#: .\delivery\templates\delivery\post-demands.html:71
+msgid "Send your request"
+msgstr "Envoyez votre demande"
+
+#: .\delivery\templates\delivery\post-ads.html:147
+#: .\delivery\templates\delivery\post-demands.html:142
+msgid "The delivery request has been sent successfully."
+msgstr "La demande de livraison a été envoyée avec succès."
+
+#: .\delivery\templates\delivery\post-ads.html:159
+#: .\delivery\templates\delivery\post-demands.html:154
+msgid ""
+"You have one or more error. Please provide all required fields to post a "
+"request."
+msgstr ""
+"Vous avez une ou plusieurs erreurs. Veuillez fournir tous les champs "
+"obligatoires pour faire une demande."
+
+#: .\delivery\templates\delivery\post-demands.html:13
+msgid "Delivery request for individual"
+msgstr "Demande de livraison pour particulier"
+
+#: .\delivery\templates\delivery\post-demands.html:41
+msgid "Place where package will be picked up"
+msgstr "Endroit où le colis sera ramassé"
+
+#: .\delivery\templates\delivery\post-demands.html:41
+msgid "Store or Person name"
+msgstr "Nom du magasin ou de la personne"
+
+#: .\delivery\templates\delivery\post-demands.html:48
+msgid "Your phone"
+msgstr "Votre téléphone"
+
+#: .\delivery\templates\delivery\post-demands.html:54
+msgid "Store or person address"
+msgstr "Adresse du magasin ou de la personne"
+
+#: .\delivery\templates\delivery\post-demands.html:60
+msgid "You can provide all useful information"
+msgstr "Vous pouvez fournir toutes les informations utiles"
+
+#: .\delivery\templates\delivery\post-demands.html:60
+msgid "Order number or useful information"
+msgstr "Numéro de commande ou informations utiles"
+
+#: .\livrer\templates\livrer\about.html:8
+#: .\livrer\templates\livrer\about.html:11 .\templates\footer.html:36
+#: .\templates\header.html:121
+msgid "About"
+msgstr "À propos"
+
+#: .\livrer\templates\livrer\about.html:28
+msgid "LoQQal: From our heart to your home"
+msgstr "LoQQal : Nous livrons avec le coeur"
+
+#: .\livrer\templates\livrer\about.html:31
+#: .\livrer\templates\livrer\index.html:210
+msgid "WE SERVE PEOPLE AND BUSINESSES."
+msgstr "NOUS SERVONS LES PERSONNES ET LES ENTREPRISES."
+
+#: .\livrer\templates\livrer\about.html:33
+msgid ""
+"We deliver your essential goods with heart; your grocery store, your "
+"pharmacy and much more. We deliver on demand, the SAME DAY. We have two "
+"types of delivery : Normal delivery and Express delivery."
+msgstr ""
+"Nous livrons vos biens essentiels avec le cœur; votre épicerie, vos produits "
+"de pharmacie et bien plus encore. Nous livrons à la demande, le JOUR MÊME. "
+"Nous avons deux types de livraison : la livraison normale et la livraison "
+"express."
+
+#: .\livrer\templates\livrer\about.html:35
+msgid ""
+"Express delivery allows the customer to receive his package in TWO HOURS."
+msgstr ""
+"La livraison express permet au client de recevoir son colis en DEUX HEURES "
+"maximum."
+
+#: .\livrer\templates\livrer\about.html:37
+msgid ""
+"Normal delivery allows the customer to receive his package the SAME DAY, the "
+"EVENING."
+msgstr ""
+"La livraison normale permet au client de recevoir son colis le JOUR MÊME, le "
+"SOIR."
+
+#: .\livrer\templates\livrer\about.html:39
+msgid ""
+" We deliver with heart: this philosophy suggests that we treat you as we "
+"want to be treated and treat your packages as ours. "
+msgstr ""
+" Nous livrons avec le cœur: cette philosophie suggère que nous vous traitons "
+"comme nous voulons être traités et traitons vos colis comme les nôtres. "
+
+#: .\livrer\templates\livrer\about.html:41
+msgid ""
+"To be more precise, we treat your packages very carefully so that they are "
+"delivered to you whole and intact. Otherwise, in the event of loss or "
+"breakage, you are fully reimbursed. We deliver with heart means that the "
+"reimbursement is made within a maximum of 48 hours and in proportion to the "
+"damage."
+msgstr ""
+"Pour être plus précis, nous traitons vos colis avec beaucoup de soin afin "
+"qu’ils vous soient livrés entiers et intacts. Dans le cas contraire, en cas "
+"de perte ou de bris, vous êtes intégralement remboursé. Nous livrons avec le "
+"cœur signifie que le remboursement est effectué dans un délai maximum de 48 "
+"heures et proportionnellement aux dommages."
+
+#: .\livrer\templates\livrer\about.html:47
+msgid ""
+"We deliver with heart means that we do not abandon your package when you are "
+"absent but communicate with you to find the best way to store it. We deliver "
+"with heart means that we are in tune with certain values ​​of our society, "
+"such as ecology. At LoQQal, we are bike delivery drivers, passionate and "
+"enthusiastic. If you are looking for a client centered and eco-friendly "
+"service, LoQQal is your best choice."
+msgstr ""
+"Nous livrons avec le cœur signifie que nous n’abandonnons pas votre colis "
+"lorsque vous êtes absent mais communiquons avec vous pour trouver la "
+"meilleure façon de le préserver. Nous livrons avec le cœur signifie que nous "
+"sommes en phase avec certaines valeurs de notre société, comme l’écologie. "
+"Chez LoQQal, nous sommes des livreurs à vélos, passionnés et enthousiastes. "
+"Si vous recherchez un service centré sur le client et respectueux de "
+"l’environnement, LoQQal est votre meilleur choix."
+
+#: .\livrer\templates\livrer\ads-search.html:8
+#: .\livrer\templates\livrer\ads-search.html:11
+msgid "Package status"
+msgstr "Statut du colis"
+
+#: .\livrer\templates\livrer\ads-search.html:32
+#: .\livrer\templates\livrer\ads-search.html:55
+msgid "In progress"
+msgstr "En cours"
+
+#: .\livrer\templates\livrer\ads-search.html:33
+#: .\livrer\templates\livrer\ads-search.html:53
+#: .\profiles\templates\profiles\account-dashboard.html:129
+msgid "Picked"
+msgstr "Récupéré"
+
+#: .\livrer\templates\livrer\ads-search.html:34
+#: .\livrer\templates\livrer\ads-search.html:51
+#: .\profiles\templates\profiles\account-dashboard.html:127
+msgid "Delivered"
+msgstr "Livré"
+
+#: .\livrer\templates\livrer\ads-search.html:37
+msgid "Package id :"
+msgstr "ID du colis :"
+
+#: .\livrer\templates\livrer\ads-search.html:38
+msgid "Requested :"
+msgstr "Fait :"
+
+#: .\livrer\templates\livrer\ads-search.html:49
+#: .\profiles\templates\profiles\account-dashboard.html:104
+#: .\templates\header.html:163
+msgid "Status"
+msgstr "Statut"
+
+#: .\livrer\templates\livrer\ads-search.html:70
+msgid "Sorry! your package's id is wrong"
+msgstr "Désolé! l’identifiant de votre colis est erroné"
+
+#: .\livrer\templates\livrer\contact.html:9
+msgid "Contact Us"
+msgstr "Contactez-nous"
+
+#: .\livrer\templates\livrer\contact.html:12 .\templates\footer.html:51
+#: .\templates\footer.html:57 .\templates\header.html:113
+msgid "Contact"
+msgstr "Contact"
+
+#: .\livrer\templates\livrer\contact.html:27
+msgid "Get In Touch"
+msgstr "Contact"
+
+#: .\livrer\templates\livrer\contact.html:30
+msgid "We would like to hear form you about any suggestion or complaint."
+msgstr "Nous aimerions vous entendre au sujet de toute suggestion ou plainte."
+
+#: .\livrer\templates\livrer\contact.html:45
+msgid "Have any Questions?"
+msgstr "Vous avez des questions?"
+
+#: .\livrer\templates\livrer\faq.html:22
+msgid "Frequently Asked Questions"
+msgstr "Questions fréquemment posées"
+
+#: .\livrer\templates\livrer\faq.html:26
+msgid "What is normal or express delivery?"
+msgstr "Qu’est-ce que la livraison normale ou express?"
+
+#: .\livrer\templates\livrer\faq.html:29
+msgid ""
+"- The normal delivery : The package is delivered the same day, the evening. "
+"The price is $7."
+msgstr ""
+"- La livraison normale : Le colis est livré le jour même, le soir. Le prix "
+"est de 7 $."
+
+#: .\livrer\templates\livrer\faq.html:31
+msgid ""
+"- The express delivery : The package is delivered the same day in two hour. "
+"The price is $20."
+msgstr ""
+"- La livraison express : Le colis est livré le jour même en deux heures. Le "
+"prix est de 20 $."
+
+#: .\livrer\templates\livrer\faq.html:37
+msgid "What are the packaging requirements?"
+msgstr "Quelles sont les exigences en matière d’emballage?"
+
+#: .\livrer\templates\livrer\faq.html:40
+msgid ""
+"- Weight (including packaging and content): The packages delivered will not "
+"exceed 20 kg or 44 lb per package."
+msgstr ""
+"- Poids (y compris l’emballage et le contenu): Les colis livrés ne "
+"dépasseront pas 20 kg ou 44 lb par colis."
+
+#: .\livrer\templates\livrer\faq.html:42
+msgid ""
+" - Maximum dimensions: the dimensions (height + length + width) of the "
+"package must not exceed 50 cm or \n"
+"        19 inch and the longest size must not exceed 50 cm per package. "
+msgstr ""
+" - Dimensions maximales : les dimensions (hauteur + longueur + largeur) du "
+"colis ne doivent pas dépasser 50 cm ou \n"
+"        19 pouces et la taille la plus longue ne doit pas dépasser 50 cm par "
+"colis. "
+
+#: .\livrer\templates\livrer\faq.html:45
+msgid "- the value of the package must not exceed $ 1000 CAD per package."
+msgstr "- la valeur du colis ne doit pas dépasser 1000 $ CAD par colis."
+
+#: .\livrer\templates\livrer\faq.html:47
+msgid ""
+"\n"
+"        The weight and size declared by the Customer will be checked when "
+"the packages are picked up by LoQQal deliverers.\n"
+"        LoQQal deliverers have the right to refuse any package whose weight "
+"and size exceed the above-mentioned indications.\n"
+"        "
+msgstr ""
+"\n"
+"Le poids et la taille déclarés par le Client seront vérifiés lors de la "
+"prise en charge des colis par les livreurs LoQQal.\n"
+"        Les livreurs LoQQal ont le droit de refuser tout colis dont le poids "
+"et la taille dépassent les indications susmentionnées.\n"
+"        "
+
+#: .\livrer\templates\livrer\faq.html:55
+msgid "What is the price for a delivery?"
+msgstr "Quel est le prix d’une livraison ?"
+
+#: .\livrer\templates\livrer\faq.html:58
+msgid ""
+"\n"
+"        We charge $7 per normal delivery and $20 per express delivery, plus "
+"the applicable taxes.      \n"
+"        For compagnies, we send you an invoice every week, including all the "
+"deliveries requested \n"
+"        during the week to facilitate the management of your accounting.\n"
+"        Upon agreement, you can make a unique payment every two weeks of the "
+"invoices regarding the same period.  \n"
+"        "
+msgstr ""
+"\n"
+"Nous facturons 7 $ par livraison normale et 20 $ par livraison express, plus "
+"les taxes applicables.      \n"
+"        Pour les compagnies, nous vous envoyons une facture chaque semaine, "
+"incluant toutes les livraisons demandées \n"
+"        pendant la semaine pour faciliter la gestion de votre comptabilité.\n"
+"        Sur accord, vous pouvez effectuer un paiement unique toutes les deux "
+"semaines des factures concernant la même période.  \n"
+"        "
+
+#: .\livrer\templates\livrer\faq.html:65
+msgid "For individuals, the paiement is done after the delivery."
+msgstr "Pour les particuliers, le paiement se fait après la livraison."
+
+#: .\livrer\templates\livrer\faq.html:70
+msgid "How do I request a delivery?"
+msgstr "Comment puis-je demander une livraison?"
+
+#: .\livrer\templates\livrer\faq.html:73
+msgid "First, create an account on our website."
+msgstr "Tout d’abord, créez un compte sur notre site Web."
+
+#: .\livrer\templates\livrer\faq.html:74
+msgid "Then, fill the delivery request form or call us at 438-530-7574."
+msgstr ""
+"Ensuite, remplissez le formulaire de demande de livraison ou appelez-nous au "
+"438-530-7574."
+
+#: .\livrer\templates\livrer\faq.html:75
+msgid ""
+"NB: If you are a individual choose individual delivery request and If you "
+"are a Compagny choose Businesses delivery request."
+msgstr ""
+"NB: Si vous êtes un particulier, choisissez une demande de livraison pour "
+"particulier et si vous êtes une entreprise, choisissez une demande de "
+"livraison d’entreprise"
+
+#: .\livrer\templates\livrer\faq.html:77
+msgid ""
+"And there we go! For your future delivery requests, just log in your LoQQal "
+"account and fill the said form."
+msgstr ""
+"Et voilà! Pour vos futures demandes de livraison, connectez-vous simplement "
+"à votre compte LoQQal et remplissez ledit formulaire."
+
+#: .\livrer\templates\livrer\faq.html:82
+msgid "How can i modify my delivery request?"
+msgstr "Comment puis-je modifier ma demande de livraison"
+
+#: .\livrer\templates\livrer\faq.html:85
+msgid ""
+"To modify or cancel a request, call our customer service at: 438-530-7574 or "
+"contact us at: info@loqqal.ca."
+msgstr ""
+"Pour modifier ou annuler une demande, appelez notre service à la clientèle "
+"au : 438-530-7574 ou contactez-nous au : info@loqqal.ca."
+
+#: .\livrer\templates\livrer\faq.html:87
+msgid ""
+"Please, make sure you precise in the Subject of the mail that you are "
+"requesting a cancellation or a modification of your delivery request."
+msgstr ""
+"S’il vous plaît, assurez-vous de préciser dans l’objet du courrier que vous "
+"demandez une annulation ou une modification de votre demande de livraison."
+
+#: .\livrer\templates\livrer\faq.html:92
+msgid "When will our clients receive their packages?"
+msgstr "Quand nos clients recevront-ils leurs colis?"
+
+#: .\livrer\templates\livrer\faq.html:95
+msgid ""
+"For the normal deliveries, we recommend making your delivery request before "
+"4:00 pm if you wish to have your packages delivered the same day."
+msgstr ""
+"Pour les livraisons normales, nous vous recommandons de faire votre demande "
+"de livraison avant 16h00 si vous souhaitez que vos colis soient livrés le "
+"jour même."
+
+#: .\livrer\templates\livrer\faq.html:97
+msgid ""
+"\n"
+"        If you do make your request after 4:00 pm, your packages will be "
+"picked your package the day after.\n"
+"        We usually make the delivery rounds on the afternoons.\n"
+"        "
+msgstr ""
+"\n"
+"Si vous faites votre demande après 16h00, vos colis seront ramassés le "
+"lendemain.\n"
+"        Nous faisons généralement les tournées de livraison l’après-midi.\n"
+"        "
+
+#: .\livrer\templates\livrer\faq.html:102
+msgid "For the express deliveries, clients receive their packages in one hour."
+msgstr ""
+"Pour les livraisons express, les clients reçoivent leurs colis en une heure."
+
+#: .\livrer\templates\livrer\faq.html:107
+msgid "How can I check the status of my delivery?"
+msgstr "Comment puis-je vérifier l’état de ma livraison?"
+
+#: .\livrer\templates\livrer\faq.html:110
+msgid ""
+"\n"
+"        It is amazingly simple. First go on Loqqal.ca. Then enter your "
+"package identification number (ID) on the homepage.        \n"
+"        Finally, click on the button named status and you will have all the "
+"information regarding the delivery of your package.\n"
+"        "
+msgstr ""
+"\n"
+"C’est étonnamment simple. Allez-y d’abord sur Loqqal.ca. Entrez ensuite "
+"votre numéro d’identification de colis (ID) sur la page d’accueil.        \n"
+"        Enfin, cliquez sur le bouton nommé statut et vous aurez toutes les "
+"informations concernant la livraison de votre colis.\n"
+"        "
+
+#: .\livrer\templates\livrer\faq.html:118
+msgid "How LoQQal delivers the packages?"
+msgstr "Comment LoQQal livre les colis?"
+
+#: .\livrer\templates\livrer\faq.html:121
+msgid "We deliver by bicycle with a carriage attached to it."
+msgstr "Nous livrons à vélo avec un chariot attaché à celui-ci."
+
+#: .\livrer\templates\livrer\faq.html:123
+msgid ""
+"By doing so, we make sure that your package will travel in the best "
+"condition and arrived without any damage."
+msgstr ""
+"Ce faisant, nous nous assurons que votre colis voyagera dans les meilleures "
+"conditions et sera arrivé sans aucun dommage."
+
+#: .\livrer\templates\livrer\faq.html:128
+msgid "What happens if my package is damaged ?"
+msgstr "Que se passe-t-il si mon colis est endommagé ?"
+
+#: .\livrer\templates\livrer\faq.html:131
+msgid ""
+"If a damage or a loss occurs, we will investigate to determine whether we "
+"are responsible for the damage or loss."
+msgstr ""
+"Si un dommage ou une perte se produit, nous enquêterons pour déterminer si "
+"nous sommes responsables du dommage ou de la perte."
+
+#: .\livrer\templates\livrer\faq.html:133
+msgid ""
+"If our liability is confirmed, we will reimburse the total value of your "
+"package."
+msgstr ""
+"Si notre responsabilité est confirmée, nous vous rembourserons la valeur "
+"totale de votre colis."
+
+#: .\livrer\templates\livrer\faq.html:135
+msgid ""
+"The whole process should not take more than 48 hours, unless there are "
+"unexpected events."
+msgstr ""
+"L’ensemble du processus ne devrait pas prendre plus de 48 heures, sauf en "
+"cas d’événements inattendus."
+
+#: .\livrer\templates\livrer\faq.html:137
+msgid ""
+"We recommend checking your package in the presence of our deliverer or as "
+"soon as you have it, if the delivery was done in your absence."
+msgstr ""
+"Nous vous recommandons de vérifier votre colis en présence de notre livreur "
+"ou dès que vous l’avez, si la livraison a été effectuée en votre absence."
+
+#: .\livrer\templates\livrer\faq.html:139
+msgid ""
+"As soon as you notice a damage or a loss, please contact us by email or "
+"phone."
+msgstr ""
+"Dès que vous remarquez un dommage ou une perte, veuillez nous contacter par "
+"e-mail ou par téléphone."
+
+#: .\livrer\templates\livrer\index.html:17
+msgid ""
+" Ecofriendly  <br>\n"
+"                        delivery <br>\n"
+"                        for everyone  "
+msgstr " Livraison <br>écologique <br>pour tous  "
+
+#: .\livrer\templates\livrer\index.html:20
+msgid "Because we love nature and we love delivery"
+msgstr "Parce que nous aimons la nature et que nous aimons la livraison"
+
+#: .\livrer\templates\livrer\index.html:24
+msgid "Make delivery request"
+msgstr "Demande de livraison"
+
+#: .\livrer\templates\livrer\index.html:78
+msgid "Why you should choose us"
+msgstr "Pourquoi devriez-vous nous choisir"
+
+#: .\livrer\templates\livrer\index.html:80
+msgid "The Only Delivery Service You Need"
+msgstr "Le seul service de livraison dont vous avez besoin"
+
+#: .\livrer\templates\livrer\index.html:86
+msgid " Eco-friendly <br> Delivery "
+msgstr "Livraison <br> écologique"
+
+#: .\livrer\templates\livrer\index.html:93
+msgid " Secured <br> Delivery  "
+msgstr "Livraison <br> securisée"
+
+#: .\livrer\templates\livrer\index.html:100
+msgid " Fast <br> Delivery "
+msgstr "Livraison <br> rapide"
+
+#: .\livrer\templates\livrer\index.html:107
+msgid " Parcel <br> Insured "
+msgstr "Colis <br> assuré"
+
+#: .\livrer\templates\livrer\index.html:114
+msgid " Tracking <br> System "
+msgstr "Système <br> de suivi"
+
+#: .\livrer\templates\livrer\index.html:132
+msgid "Areas covered by LoQQal"
+msgstr "Zones couvertes par LoQQal"
+
+#: .\livrer\templates\livrer\index.html:135
+msgid "Some areas of Montreal"
+msgstr "Quelques quartiers de Montréal"
+
+#: .\livrer\templates\livrer\index.html:142
+msgid "Boroughs"
+msgstr "Arrondissements"
+
+#: .\livrer\templates\livrer\index.html:143
+msgid "Zip code"
+msgstr "Code postal"
+
+#: .\livrer\templates\livrer\index.html:179
+msgid "What we deliver : Grocery, Clothing,"
+msgstr "Ce que nous livrons : Épicerie, Vêtements,"
+
+#: .\livrer\templates\livrer\index.html:180
+msgid "Office supply... ;"
+msgstr "Fournitures de bureau... ;"
+
+#: .\livrer\templates\livrer\index.html:185
+msgid "More informations"
+msgstr "Plus d'informations"
+
+#: .\livrer\templates\livrer\index.html:203
+msgid "LoQQal Vision"
+msgstr "LoQQal Vision"
+
+#: .\livrer\templates\livrer\index.html:205
+msgid "SIMPLE solutions to"
+msgstr "Solutions SIMPLES aux"
+
+#: .\livrer\templates\livrer\index.html:207
+msgid "COMPLEX problems"
+msgstr "Problèmes COMPLEXES"
+
+#: .\livrer\templates\livrer\index.html:211
+msgid ""
+"What is the best we can offer to our community, while we are all facing the "
+"challenges related to climate changes and the decline of the local economy?"
+msgstr ""
+"Que pourrions-nous offrir de mieux à notre communauté face aux défis liés "
+"aux changements climatiques, au déclin de l’économie locale?"
+
+#: .\livrer\templates\livrer\index.html:213
+msgid ""
+"Our commitment remains the timeless and effective way to face such great "
+"challenges."
+msgstr ""
+"Notre engagement reste le moyen intemporel et efficace face aux grands maux."
+
+#: .\livrer\templates\livrer\index.html:214
+msgid ""
+"Our moto is to great challenges, great commitment. We work with the heart, "
+"which guarantees a high-quality service that meets your expectations."
+msgstr ""
+"Nous disons aux grands maux, les grands engagements. Nous travaillons avec "
+"le cœur, ce qui garantit un service de qualité à la hauteur de vos attentes. "
+
+#: .\livrer\templates\livrer\index.html:215
+msgid ""
+"Commitment is priceless, which is why we say “simple solutions to complex "
+"problems”."
+msgstr ""
+"L’engagement n’a pas de prix, c’est pourquoi nous disons « des solutions "
+"simples aux problèmes complexes »."
+
+#: .\livrer\templates\livrer\index.html:216
+msgid "Commitment is the essence of our business."
+msgstr "L’engagement est l’essence même de notre entreprise."
+
+#: .\livrer\templates\livrer\index.html:233
+msgid "Packages delivered"
+msgstr "Colis livrés"
+
+#: .\livrer\templates\livrer\index.html:239
+msgid "Number of km driven"
+msgstr "Nombre de km parcourus"
+
+#: .\livrer\templates\livrer\index.html:245
+msgid "g of CO2 less"
+msgstr "g de CO2 en moins"
+
+#: .\livrer\templates\livrer\index.html:554
+msgid "Call us today & "
+msgstr "Appelez-nous dès aujourd’hui & "
+
+#: .\livrer\templates\livrer\index.html:555
+msgid "Discover Possibilities for you or your business."
+msgstr "Découvrez des possibilités pour vous ou votre entreprise."
+
+#: .\livrer\templates\livrer\index.html:556
+msgid "and get started with 2 deliveries for free for you or your business"
+msgstr "et commencez avec 2 livraisons gratuites pour vous ou votre entreprise"
+
+#: .\livrer\templates\livrer\privacy-policy.html:12
+msgid "Terms of Service"
+msgstr "Conditions d'utilisation"
+
+#: .\livrer\views.py:60
+msgid " Please, enter your package id"
+msgstr " S’il vous plaît, entrez votre id de colis"
+
+#: .\livrer\views.py:61
+msgid " Sorry, your id is not a number"
+msgstr " Désolé, votre identifiant n’est pas un numéro"
+
+#: .\profiles\templates\profiles\account-close.html:8
+msgid "Close Account"
+msgstr "Fermeture du compte"
+
+#: .\profiles\templates\profiles\account-close.html:11
+msgid "Close"
+msgstr "Fermer"
+
+#: .\profiles\templates\profiles\account-close.html:25
+msgid "You are sure you want to close your account?"
+msgstr "Vous êtes sûr de vouloir fermer votre compte ?"
+
+#: .\profiles\templates\profiles\account-close.html:27
+msgid "Yes"
+msgstr "Oui"
+
+#: .\profiles\templates\profiles\account-close.html:30
+msgid "No"
+msgstr "Non"
+
+#: .\profiles\templates\profiles\account-close.html:33
+msgid "Submit"
+msgstr "Soumettre"
+
+#: .\profiles\templates\profiles\account-dashboard.html:8
+#: .\profiles\templates\profiles\account-dashboard.html:11
+#: .\profiles\templates\profiles\account-dashboard.html:30
+#: .\profiles\templates\profiles\account-sidebar.html:30
+#: .\templates\header.html:128
+msgid "Dashboard"
+msgstr "Tableau de bord"
+
+#: .\profiles\templates\profiles\account-dashboard.html:40
+msgid "Apr"
+msgstr "Avr"
+
+#: .\profiles\templates\profiles\account-dashboard.html:41
+msgid "May"
+msgstr "Mai"
+
+#: .\profiles\templates\profiles\account-dashboard.html:44
+msgid "Aug"
+msgstr "Aoû"
+
+#: .\profiles\templates\profiles\account-dashboard.html:78
+msgid "Weekly total request"
+msgstr "Demande totale hebdomadaire"
+
+#: .\profiles\templates\profiles\account-dashboard.html:87
+msgid "Weekly total price"
+msgstr "Prix total hebdomadaire"
+
+#: .\profiles\templates\profiles\account-dashboard.html:100
+msgid "Name"
+msgstr "Nom"
+
+#: .\profiles\templates\profiles\account-dashboard.html:103
+msgid "Date Posted"
+msgstr "Publiée le"
+
+#: .\profiles\templates\profiles\account-dashboard.html:105
+msgid "Type"
+msgstr "Type"
+
+#: .\profiles\templates\profiles\account-dashboard.html:131
+msgid "In prog.."
+msgstr "En cours.."
+
+#: .\profiles\templates\profiles\account-dashboard.html:153
+msgid "first"
+msgstr "premier"
+
+#: .\profiles\templates\profiles\account-dashboard.html:154
+msgid "previous"
+msgstr "précédent"
+
+#: .\profiles\templates\profiles\account-dashboard.html:162
+msgid "next"
+msgstr "suivant"
+
+#: .\profiles\templates\profiles\account-dashboard.html:163
+msgid "last"
+msgstr "dernier"
+
+#: .\profiles\templates\profiles\account-setting.html:8
+msgid "Profile Settings"
+msgstr "Paramètres du profil"
+
+#: .\profiles\templates\profiles\account-setting.html:11
+msgid "Settings"
+msgstr "Paramètres"
+
+#: .\profiles\templates\profiles\account-setting.html:29
+#: .\profiles\templates\profiles\account-setting.html:41
+msgid "Update Profile"
+msgstr "Mettre à jour"
+
+#: .\profiles\templates\profiles\account-sidebar.html:22
+msgid "Joined"
+msgstr "A rejoint"
+
+#: .\profiles\templates\profiles\account-sidebar.html:36
+#: .\templates\header.html:129
+msgid "Account Settings"
+msgstr "Paramètres du compte"
+
+#: .\profiles\templates\profiles\account-sidebar.html:43
+#: .\templates\header.html:130
+msgid "Logout"
+msgstr "Déconnexion"
+
+#: .\profiles\templates\profiles\account-sidebar.html:49
+msgid "Account close"
+msgstr "Fermeture du compte"
+
+#: .\service\settings.py:149
+msgid "English"
+msgstr "Anglais"
+
+#: .\service\settings.py:150
+msgid "French"
+msgstr "Français"
+
+#: .\templates\404.html:25
+msgid "Something Went Wrong..."
+msgstr "Quelque chose s’est mal passé..."
+
+#: .\templates\404.html:28
+msgid "Go to"
+msgstr "Aller à"
+
+#: .\templates\404.html:28
+msgid "Homepage"
+msgstr "Page d'accueil"
+
+#: .\templates\footer.html:17
+msgid "Language"
+msgstr "Langue"
+
+#: .\templates\footer.html:37
+msgid "Privacy Policy"
+msgstr "Politique de confidentialité"
+
+#: .\templates\footer.html:41
+msgid "Openning hours"
+msgstr "Heures d’ouverture"
+
+#: .\templates\footer.html:43
+msgid "Monday to friday : 10 - 17h"
+msgstr "Lundi au vendredi : 10 - 17h"
+
+#: .\templates\footer.html:44
+msgid "Saturday : 10 - 13h"
+msgstr "Samedi : 10 - 13h"
+
+#: .\templates\footer.html:48
+msgid "Links"
+msgstr "Liens"
+
+#: .\templates\footer.html:50 .\templates\header.html:117
+msgid "Faq"
+msgstr "Faq"
+
+#: .\templates\footer.html:71
+msgid "All rights reserved"
+msgstr "Tous droits réservés"
+
+#: .\templates\footer.html:72
+msgid "Developed by"
+msgstr "Développé par"
+
+#: .\templates\header.html:9
+msgid ""
+"LoQQal is eco-friendly delivery at Montreal. We use bicycle to make our "
+"deliveries. We treat your packages as ours"
+msgstr ""
+"LoQQal est une livraison écologique à Montréal. Nous utilisons le vélo pour "
+"effectuer nos livraisons. Nous traitons vos colis comme les nôtres"
+
+#: .\templates\header.html:10
+msgid "LoQQal: Ecofriendly delivery for everyone"
+msgstr "LoQQal : Livraison écologique pour tous"
+
+#: .\templates\header.html:107
+msgid "If you are an individual"
+msgstr "Si vous êtes un particulier"
+
+#: .\templates\header.html:107
+msgid "For individual"
+msgstr "Pour les particuliers"
+
+#: .\templates\header.html:108
+msgid "If you are a compagny"
+msgstr "Si vous êtes une entreprise"
+
+#: .\templates\header.html:108
+msgid "For Businesses"
+msgstr "Pour les entreprises"
+
+#: .\templates\header.html:134
+msgid "My Account"
+msgstr "Mon compte"
+
+#: .\templates\header.html:136
+msgid "Signup"
+msgstr "S'inscrire"
+
+#: .\templates\header.html:162
+msgid "Enter your package id"
+msgstr "Entrez votre ID du colis"
+
+#, fuzzy
+#~| msgid "Search"
+#~ msgid "Search files"
+#~ msgstr "Rechercher"
+
+#, fuzzy
+#~| msgid "Message"
+#~ msgid "Messages"
+#~ msgstr "Message"
+
+#, fuzzy
+#~| msgid "Description"
+#~ msgid "Duration"
+#~ msgstr "Description"
+
+#, fuzzy
+#~| msgid "Email Address"
+#~ msgid "Email address"
+#~ msgstr "Courriel"
+
+#, fuzzy
+#~| msgid "Address"
+#~ msgid "IPv4 address"
+#~ msgstr "Adresse"
+
+#, fuzzy
+#~| msgid "Address"
+#~ msgid "IP address"
+#~ msgstr "Adresse"
+
+#, fuzzy
+#~| msgid "Status"
+#~ msgid "Sat"
+#~ msgstr "Statut"
+
+#, fuzzy
+#~| msgid "Search"
+#~ msgid "March"
+#~ msgstr "Rechercher"
+
+#, fuzzy
+#~| msgid "Apr"
+#~ msgid "apr"
+#~ msgstr "Avr"
+
+#, fuzzy
+#~| msgid "May"
+#~ msgid "may"
+#~ msgstr "Mai"
+
+#, fuzzy
+#~| msgid "Aug"
+#~ msgid "aug"
+#~ msgstr "Aoû"
+
+#, fuzzy
+#~| msgid "Contact"
+#~ msgid "oct"
+#~ msgstr "Contact"
+
+#, fuzzy
+#~| msgid "now"
+#~ msgid "nov"
+#~ msgstr "maintenant"
+
+#, fuzzy
+#~| msgid "Search"
+#~ msgctxt "abbrev. month"
+#~ msgid "March"
+#~ msgstr "Rechercher"
+
+#, fuzzy
+#~| msgid "May"
+#~ msgctxt "abbrev. month"
+#~ msgid "May"
+#~ msgstr "Mai"
+
+#, fuzzy
+#~| msgid "Search"
+#~ msgctxt "alt. month"
+#~ msgid "March"
+#~ msgstr "Rechercher"
+
+#, fuzzy
+#~| msgid "May"
+#~ msgctxt "alt. month"
+#~ msgid "May"
+#~ msgstr "Mai"
+
+#, fuzzy
+#~| msgid "Delivery request"
+#~ msgid "Delivery request for Compagny"
+#~ msgstr "Demande de livraison"
+
+#, fuzzy
+#~| msgid "For Compagny"
+#~ msgid "For Compagnies"
+#~ msgstr "Pour les entreprises"
+
+#~ msgid "Compagny delivery request"
+#~ msgstr "Demande de livraison Entreprise"
+
+#~ msgid "Individual delivery request"
+#~ msgstr "Demande de livraison Individu"
+
+#~ msgid "From our heart for a eco-friendly delivery"
+#~ msgstr "L'amour pour une livraison écologique"
+
+#~ msgid "All advantages of our service"
+#~ msgstr "Tous les avantages de notre service"
+
+#~ msgid "Package type : Grocery, Clothes, Choes,"
+#~ msgstr "Domaine de livraison : Épicerie, Vêtements, Chaussures,"
+
+#~ msgid ""
+#~ "What could we do better for our community in the face of climate change "
+#~ "challenges,"
+#~ msgstr ""
+#~ "Que pourrions-nous faire de mieux pour notre communauté face aux défis du "
+#~ "changement climatique,"
+
+#~ msgid "Ecofriendly"
+#~ msgstr "Écologique"
+
+#~ msgid "delivery"
+#~ msgstr "livraison"
+
+#~ msgid "for everyone"
+#~ msgstr "pour tous"
+
+#~ msgid "Secure"
+#~ msgstr "Sécurisée"
+
+#~ msgid "Fast"
+#~ msgstr "Rapide"
+
+#~ msgid "Fully"
+#~ msgstr "Entièrement"
+
+#~ msgid "Insured"
+#~ msgstr "Assuré"
+
+#~ msgid "Tracking"
+#~ msgstr "Suivi"
+
+#~ msgid "System"
+#~ msgstr "Système"
+
+#~ msgid "Eco-friendly"
+#~ msgstr "Ecologique"
+
+#~ msgid ""
+#~ "We deliver your essential goods with heart; your grocery store, your "
+#~ "pharmacy and much more."
+#~ msgstr ""
+#~ "Nous livrons vos biens essentiels avec cœur; votre épicerie, votre "
+#~ "pharmacie et bien plus encore."

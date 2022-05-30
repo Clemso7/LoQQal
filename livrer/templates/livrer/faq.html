@@ -1,0 +1,147 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% load i18n %}
+<!-- Page Header Start -->
+<section class="inner-banner">
+  <div class="container">
+      <h2 class="inner-banner__title">FAQ</h2><!-- /.inner-banner__title -->
+      <ul class="list-unstyled thm-breadcrumb">
+          <li><a href="{% url 'home' %}">{% trans "Home" %}</a></li>
+          <li class="active"><a href="#">Faq</a></li>
+      </ul><!-- /.list-unstyled -->
+  </div><!-- /.container -->
+</section><!-- /.inner-banner -->
+<!-- Page Header End -->
+
+
+
+<!-- FAQ Start -->
+	<nav class="accordion arrows1">
+		<header class="box1">
+			<label for="acc-close" class="box-title1">{% trans "Frequently Asked Questions" %}</label>
+		</header>
+    <input type="radio" name="accordion" id="cb1" />
+		<section class="box1">
+			<label class="box-title1" for="cb1">{% trans "What is normal or express delivery?" %}</label>
+			<label class="box-close" for="acc-close"></label>
+			<div class="box-content1">
+        {% trans "- The normal delivery : The package is delivered the same day, the evening. The price is $7." %}"
+        <br>      
+        {% trans "- The express delivery : The package is delivered the same day in two hour. The price is $20." %}
+        
+      </div>
+		</section>
+		<input type="radio" name="accordion" id="cb2" />
+		<section class="box1">
+			<label class="box-title1" for="cb2">{% trans "What are the packaging requirements?" %}</label>
+			<label class="box-close" for="acc-close"></label>
+			<div class="box-content1">
+        {% trans "- Weight (including packaging and content): The packages delivered will not exceed 20 kg or 44 lb per package." %}
+        <br>      
+        {% blocktrans %} - Maximum dimensions: the dimensions (height + length + width) of the package must not exceed 50 cm or 
+        19 inch and the longest size must not exceed 50 cm per package. {% endblocktrans %}    
+        <br>     
+        {% trans "- the value of the package must not exceed $ 1000 CAD per package." %}
+        <br>
+        {% blocktrans %}
+        The weight and size declared by the Customer will be checked when the packages are picked up by LoQQal deliverers.
+        LoQQal deliverers have the right to refuse any package whose weight and size exceed the above-mentioned indications.
+        {% endblocktrans %}
+      </div>
+		</section>
+		<input type="radio" name="accordion" id="cb3" />
+		<section class="box1">
+			<label class="box-title1" for="cb3">{% trans "What is the price for a delivery?" %}</label>
+			<label class="box-close" for="acc-close"></label>
+			<div class="box-content1">
+        {% blocktrans %}
+        We charge $7 per normal delivery and $20 per express delivery, plus the applicable taxes.      
+        For compagnies, we send you an invoice every week, including all the deliveries requested 
+        during the week to facilitate the management of your accounting.
+        Upon agreement, you can make a unique payment every two weeks of the invoices regarding the same period.  
+        {% endblocktrans %}    
+        <br>      
+        {% trans "For individuals, the paiement is done after the delivery." %}
+      </div>
+		</section>
+		<input type="radio" name="accordion" id="cb4" />
+		<section class="box1">
+			<label class="box-title1" for="cb4">{% trans "How do I request a delivery?" %} </label>
+			<label class="box-close" for="acc-close"></label>
+			<div class="box-content1">
+        {% trans "First, create an account on our website." %} 
+        {% trans "Then, fill the delivery request form or call us at 438-530-7574." %}<br> 
+        {% trans "NB: If you are a individual choose individual delivery request and If you are a Compagny choose Businesses delivery request." %}
+        <br>
+        {% trans "And there we go! For your future delivery requests, just log in your LoQQal account and fill the said form." %}
+      </div>
+		</section>
+    <input type="radio" name="accordion" id="cb5" />
+		<section class="box1">
+			<label class="box-title1" for="cb5">{% trans "How can i modify my delivery request?" %}</label>
+			<label class="box-close" for="acc-close"></label>
+			<div class="box-content1">
+        {% trans "To modify or cancel a request, call our customer service at: 438-530-7574 or contact us at: info@loqqal.ca." %} 
+        <br>
+        {% trans "Please, make sure you precise in the Subject of the mail that you are requesting a cancellation or a modification of your delivery request." %}
+      </div>
+		</section>
+    <input type="radio" name="accordion" id="cb6" />
+		<section class="box1">
+			<label class="box-title1" for="cb6">{% trans "When will our clients receive their packages?" %}</label>
+			<label class="box-close" for="acc-close"></label>
+			<div class="box-content1">
+        {% trans "For the normal deliveries, we recommend making your delivery request before 4:00 pm if you wish to have your packages delivered the same day." %} 
+        <br>
+        {% blocktrans %}
+        If you do make your request after 4:00 pm, your packages will be picked your package the day after.
+        We usually make the delivery rounds on the afternoons.
+        {% endblocktrans %}
+        <br>
+        {% trans "For the express deliveries, clients receive their packages in one hour." %}
+      </div>
+		</section>
+    <input type="radio" name="accordion" id="cb7" />
+		<section class="box1">
+			<label class="box-title1" for="cb7">{% trans "How can I check the status of my delivery?" %}</label>
+			<label class="box-close" for="acc-close"></label>
+			<div class="box-content1">
+        {% blocktrans %}
+        It is amazingly simple. First go on Loqqal.ca. Then enter your package identification number (ID) on the homepage.        
+        Finally, click on the button named status and you will have all the information regarding the delivery of your package.
+        {% endblocktrans %}
+      </div>
+		</section>
+    <input type="radio" name="accordion" id="cb8" />
+		<section class="box1">
+			<label class="box-title1" for="cb8">{% trans "How LoQQal delivers the packages?" %}</label>
+			<label class="box-close" for="acc-close"></label>
+			<div class="box-content1">
+        {% trans "We deliver by bicycle with a carriage attached to it." %} 
+        <br>           
+        {% trans "By doing so, we make sure that your package will travel in the best condition and arrived without any damage." %}
+      </div>
+		</section>
+    <input type="radio" name="accordion" id="cb9" />
+		<section class="box1">
+			<label class="box-title1" for="cb9">{% trans "What happens if my package is damaged ?" %}</label>
+			<label class="box-close" for="acc-close"></label>
+			<div class="box-content1">
+        {% trans "If a damage or a loss occurs, we will investigate to determine whether we are responsible for the damage or loss." %} 
+        <br>
+        {% trans "If our liability is confirmed, we will reimburse the total value of your package." %}
+        <br>
+        {% trans "The whole process should not take more than 48 hours, unless there are unexpected events." %}
+        <br>
+        {% trans "We recommend checking your package in the presence of our deliverer or as soon as you have it, if the delivery was done in your absence." %} 
+        <br>
+        {% trans "As soon as you notice a damage or a loss, please contact us by email or phone." %}
+      </div>
+		</section>
+
+		<input type="radio" name="accordion" id="acc-close" />
+	</nav>
+
+
+{% endblock content %}

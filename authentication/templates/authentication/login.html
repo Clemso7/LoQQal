@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% load i18n %}
+<!-- Page Header Start -->
+<section class="inner-banner">
+  <div class="container">
+      <h2 class="inner-banner__title">{% trans "Login" %}</h2><!-- /.inner-banner__title -->
+      <ul class="list-unstyled thm-breadcrumb">
+          <li><a href="{% url 'home' %}">{% trans "Home" %}</a></li>
+          <li class="active"><a href="#">{% trans "Login" %}</a></li>
+      </ul><!-- /.list-unstyled -->
+  </div><!-- /.container -->
+</section><!-- /.inner-banner -->
+<!-- Page Header End -->
+
+
+
+<!-- Content section Start -->
+<section class="login section-padding" id="nere">
+  <div class="container" >
+    <div class="row justify-content-center" >
+      <div class="col-lg-5 col-md-12 col-xs-12">
+        <div class="login-form login-area">
+          <!-- Error message start -->
+          {% if messages %}
+          <div class="error-msg">
+            {% for message in messages %}
+            <p class="error-text text-center">{{ message }}</p>
+            {% endfor %}
+          </div>
+          {% endif %}
+          <!-- Error message end -->
+
+          <form method="POST" action="" role="form" class="login-form" >
+            {% csrf_token %}
+            <div class="form-group">
+              <div class="input-icon">
+                
+                <input type="text" name="username" class="form-control" placeholder="{% trans 'Username' %}">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-icon">
+                
+                <input type="password" name="password" class="form-control" placeholder="{% trans 'Password' %}">
+              </div>
+            </div>
+            <div class="form-group mb-3">
+              <div class="segment">
+                {% trans "Don't have an account?" %} <a class="signup-link" href="{% url 'signup' %}">{% trans "Sign Up" %}</a>
+              </div>
+              <div class="segment">
+                <a class="forgetpassword-link" href="{% url 'reset_password' %}">{% trans "Forgot Password?" %}</a>
+              </div>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="check-box">{% trans "Login" %}</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock content %}

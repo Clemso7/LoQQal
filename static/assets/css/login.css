@@ -1,0 +1,150 @@
+
+body, html {
+    background-color: #EBECF0;
+} 
+body, p, input, select, textarea, button {
+    font-family: 'Montserrat', sans-serif; letter-spacing: -0.2px; font-size: 16px;
+} 
+div, p {
+    color: #BABECC;
+} 
+form {
+    padding-top: 2px;  margin: 0 auto; position: center;
+} 
+.segment {
+    padding: 8px 0; width: 300px; text-align: center
+} 
+button, input {
+    border: 0; outline: 0; font-size: 16px; border-radius: 320px; padding: 10px; 
+    background-color: #EBECF0; text-shadow: 1px 1px 0 #FFF; 
+} 
+
+button {
+    color: #61677C; font-weight: bold; box-shadow: -5px -5px 20px #FFF, 5px 5px 20px #BABECC;
+    transition: all 0.2s ease-in-out; cursor: pointer; font-weight: 600;
+    } 
+button:hover {
+    box-shadow: -2px -2px 5px #FFF, 2px 2px 5px #BABECC;
+} 
+button:active {
+    box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+} 
+button .icon {
+    margin-right: 8px;
+} 
+
+button.red {
+    display: block; padding: 6px; margin-left: 4px; width: 65px; color: #AE1100;
+} 
+button.check-box {
+    display: block; padding: 6px; margin-left: 4px; 
+    width: 160px; color: #0e5ae9; margin-bottom: 25px; margin-top: 15px;
+} 
+.input-group {
+    display: flex; width: 300px; align-items: center; justify-content: flex-start;
+} 
+
+
+.input-group label {
+    margin: 0; flex: 1;
+}
+DIV.segment {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+DIV.input-group {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+DIV.red {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+DIV.input-group {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+label {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 15px; 
+}
+
+button.check-box {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+ }
+
+
+ section.register section-padding {
+    background-color: #EBECF0;
+    color: #EBECF0;
+ }
+
+
+.form-control{
+    border: 0; outline: 0; font-size: 16px; border-radius: 320px; 
+    padding: 10px; background-color: #EBECF0; text-shadow: 1px 1px 0 #FFF;
+} 
+.form-control {
+    display: block; margin-bottom: 24px; width: 300px;
+} 
+.form-control {
+    margin-right: 16px; box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #FFF;
+    width: 100%; box-sizing: border-box; transition: all 0.2s ease-in-out;
+    appearance: none; -webkit-appearance: none;
+} 
+.form-control:focus {
+    box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+}
+.form-control{
+    display: flex; width: 300px; align-items: center; justify-content: flex-start;
+} 
+.form-control{
+    margin: 0; flex: 1;
+}
+
+.form-control{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+
+.form-controltext {
+
+    border: 0; outline: 0; font-size: 16px; border-radius: 20px; 
+    padding: 10px; background-color: #EBECF0; text-shadow: 1px 1px 0 #FFF;
+    display: block; margin-bottom: 24px; width: 300px;
+    margin-right: 16px; box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #FFF;
+    width: 100%; box-sizing: border-box; transition: all 0.2s ease-in-out;
+    appearance: none; -webkit-appearance: none;
+    display: flex; width: 300px; align-items: center; justify-content: flex-start;
+ }
+
+.form-controltext:focus {
+    box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+}
+
+
+.form-controltext {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+ #nere {
+    margin: 20px;
+    padding: 20px;  
+}

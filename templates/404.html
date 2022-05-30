@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% load i18n %}
+    <!-- Page Header Start -->
+    <section class="inner-banner">
+      <div class="container">
+          <h2 class="inner-banner__title">404</h2><!-- /.inner-banner__title -->
+          <ul class="list-unstyled thm-breadcrumb">
+              <li><a href="{% url 'home' %}">{% trans "Home" %}</a></li>
+              <li class="active"><a href="#">404</a></li>
+          </ul><!-- /.list-unstyled -->
+      </div><!-- /.container -->
+  </section><!-- /.inner-banner -->
+    <!-- Page Header End -->  
+
+    <!-- Start Content -->
+    <div class="error section-padding">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+            <div class="error-content">
+              <div class="error-message">
+                <h2>404</h2>
+                <h3><span>Ooooops!</span> {% trans "Something Went Wrong..." %}</h3>
+              </div>
+              <div class="description">
+                <span>{% trans "Go to" %} <a href="{% url 'home' %}">{% trans "Homepage" %}</a></span>
+              </div>
+            </div>
+          </div>
+        </div>      
+      </div>
+    </div>
+    <!-- End Content -->  
+  </body>
+</html>
+
+{% endblock content %}

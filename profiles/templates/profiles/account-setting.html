@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% load i18n %}
+<!-- Page Header Start -->
+<section class="inner-banner">
+  <div class="container">
+      <h2 class="inner-banner__title">{% trans "Profile Settings" %}</h2><!-- /.inner-banner__title -->
+      <ul class="list-unstyled thm-breadcrumb">
+          <li><a href="{% url 'home' %}">{% trans "Home" %}</a></li>
+          <li class="active"><a href="#">{% trans "Settings" %}</a></li>
+      </ul><!-- /.list-unstyled -->
+  </div><!-- /.container -->
+</section><!-- /.inner-banner -->
+<!-- Page Header End -->
+
+<!-- Start Content -->
+<div id="content" class="section-padding">
+  <div class="container">
+    <div class="row">
+      <!-- Account Sidebar -->
+      {% include 'profiles/account-sidebar.html' %}
+      <!-- Account Sidebar -->
+      <div class="col-sm-12 col-md-8 col-lg-9">
+        <div class="page-content">
+            <div class="inner-box">
+              <div class="tg-contactdetail">
+                <div class="dashboard-box">
+                  <h2 class="dashbord-title">{% trans "Update Profile" %}</h2>
+                  
+                </div>
+                <div class="dashboard-wrapper">
+                <form id="" method="POST" action="" class="profile-form"
+                enctype="multipart/form-data">
+                  <div class="dx-box-content">
+                      {% csrf_token %}
+                      {{ user_form }}
+                      {{ profile_form }}
+                      
+                      <div class="text-center">
+                        <button type="submit" id="un" class="check-box">{% trans "Update Profile" %}</button>
+                      </div>
+                  </div>
+                </form>
+                </div>
+              </div>
+              <!-- Message start -->
+              {% if messages %}
+              <div class="error-msg">
+                {% for message in messages %}
+                <p class="error-text text-center">{{ message }}</p>
+                {% endfor %}
+              </div>
+              {% endif %}
+              <!-- Message end -->
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Content -->
+<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB2H3hciF_GD53_a0CHteVtdaARdleHDY&callback=initAutocomplete&libraries=places&v=weekly"
+      async
+    >
+</script>
+{% endblock content %}

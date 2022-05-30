@@ -1,0 +1,179 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% load i18n %}
+<!-- Page Header Start -->
+<section class="inner-banner">
+  <div class="container">
+      <h2 class="inner-banner__title">{% trans "Dashboard" %}</h2><!-- /.inner-banner__title -->
+      <ul class="list-unstyled thm-breadcrumb">
+          <li><a href="{% url 'home' %}">{% trans "Home" %}</a></li>
+          <li class="active"><a href="#">{% trans "Dashboard" %}</a></li>
+      </ul><!-- /.list-unstyled -->
+  </div><!-- /.container -->
+</section><!-- /.inner-banner -->
+<!-- Page Header End -->
+
+
+
+<!-- Start Content -->
+<div id="content" class="section-padding">
+  <div class="container">
+    <div class="row">
+      <!-- Account Sidebar -->
+      {% include 'profiles/account-sidebar.html' %}
+      <!-- Account Sidebar -->
+      <div class="col-sm-12 col-md-8 col-lg-9">
+        <div class="page-content">
+          <div class="inner-box">
+            <div class="dashboard-box">
+              <h2 class="dashbord-title">{% trans "Dashboard" %}</h2>
+            </div>
+
+            <div style="overflow-x:auto;">
+              <table class="containerT">
+                <thead>
+                  <tr>
+                    <th>Jan</th>
+                    <th>Feb</th>
+                    <th>Mar</th>
+                    <th>{% trans "Apr" %}</th>
+                    <th>{% trans "May" %}</th>
+                    <th>Jun</th>
+                    <th>Jul</th>
+                    <th>{% trans "Aug" %}</th>
+                    <th>Sep</th>
+                    <th>Oct</th>
+                    <th>Nov</th>
+                    <th>Dec</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td >{{ jan }}</td>
+                    <td>{{ fev }}</td>
+                    <td>{{ mar }}</td>
+                    <td>{{ apr }}</td>
+                    <td>{{ may }}</td>
+                    <td>{{ jun }}</td>
+                    <td>{{ jul }}</td>
+                    <td>{{ aug }}</td>
+                    <td>{{ sep }}</td>
+                    <td>{{ oct }}</td>
+                    <td>{{ nov }}</td>
+                    <td>{{ dec }}</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+            </div>
+
+            <div class="dashboard-wrapper">
+              <div class="dashboard-sections">
+                <div class="row">
+                  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <div class="dashboardbox">
+                      <div class="icon"><i class="lni-write"></i></div>
+                      <div class="contentbox">
+                        <h2>{% trans "Weekly total request" %}</h2>
+                        <h3>{{ total_ads }} {% trans "Delivery request" %}</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <div class="dashboardbox">
+                      <div class="icon"><i class="lni-add-files"></i></div>
+                      <div class="contentbox">
+                        <h2>{% trans "Weekly total price" %}</h2>
+                        <h3>{{ featured_ads }}$ Dollars</h3>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              {% if ads_posted %}
+              <table class="table table-responsive dashboardtable tablemyads">
+                <thead>
+                  <tr>
+                    <!-- <th>Photo</th> -->
+                    <th>{% trans "Name" %}</th>
+                    <th>{% trans "Address" %}</th>
+                    <th>{% trans "Phone" %}</th>
+                    <th>{% trans "Date Posted" %}</th>
+                    <th>{% trans "Status" %}</th>
+                    <th>{% trans "Type" %}</th>
+                    <th>Id</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for ad in page_obj %}
+                  <tr data-category="active">
+                  
+                    <td data-title="Title">
+                      <h3>{{ ad.name }}</h3>
+                      <!-- <span>Ad ID: ng3D5hAMHPajQrM</span> -->
+                    </td>
+                    <td data-title="Category"><span class="adcategories">{{ ad.autocomplete }}</span></td>
+                    <td data-title="Price">
+                      <h3>{{ ad.phone }}</h3>
+                    </td>
+
+                    <td data-title="Date">
+                      <h3>{{ ad.published_date }}</h3>
+                    </td>
+                    <td data-title="Ad Status">
+                      {% if ad.is_active == "DELIVERED" %}
+                      <span id='clair' class="adstatus adstatusactive">{% trans "Delivered" %}</span>
+                      {% elif ad.is_active == "PICKED" %}
+                      <span id='clair' class="adstatus adstatusexpired">{% trans "Picked" %}</span>
+                      {% elif ad.is_active == "IN PROGRESS" %}
+                      <span id='clair' class="adstatus adstatusdeleted">{% trans "In prog.." %}</span>
+                      {% endif %}
+                    </td>
+                    <td data-title="Date">
+                      <h3>{{ ad.service }}</h3>
+                    </td>
+                    <td data-title="Date">
+                      <h3>{{ ad.id }}</h3>
+                    </td>
+                    
+                  </tr>
+                  {% endfor %}
+                  
+                </tbody>
+              </table>
+              {% endif %}
+
+
+
+              <div class="pagination">
+                <span class="step-links">
+                    {% if page_obj.has_previous %}
+                        <a href="?page=1">&laquo; {% trans "first" %}</a>
+                        <a href="?page={{ page_obj.previous_page_number }}">{% trans "previous" %}</a>
+                    {% endif %}
+              
+                    <span class="current">
+                        Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+                    </span>
+              
+                    {% if page_obj.has_next %}
+                        <a href="?page={{ page_obj.next_page_number }}">{% trans "next" %}</a>
+                        <a href="?page={{ page_obj.paginator.num_pages }}">{% trans "last" %} &raquo;</a>
+                    {% endif %}
+                </span>
+              </div>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Content -->
+
+{% endblock content %}

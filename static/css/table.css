@@ -1,0 +1,81 @@
+/*	
+	Side Navigation Menu V2, RWD
+	===================
+	Author: https://github.com/pablorgarcia
+ */
+
+ @charset "UTF-8";
+ @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+ 
+ 
+ 
+ 
+ .blue { color: #185875; }
+ .yellow { color: #FFF842; }
+ 
+ .containerT th h1 {
+       font-weight: bold;
+       font-size: 1em;
+   text-align: left;
+   color: #185875;
+ }
+ 
+ .containerT td {
+       font-weight: normal;
+       font-size: 1em;
+   -webkit-box-shadow: 0 2px 2px -2px #fdfdfd;
+        -moz-box-shadow: 0 2px 2px -2px #fdfdfd;
+             box-shadow: 0 2px 2px -2px #fdfdfd;
+ }
+ 
+ .containerT {
+       text-align: left;
+       overflow: hidden;
+       width: 80%;
+       margin: 0 auto;
+   display: table;
+   padding: 0 0 8em 0;
+ }
+ 
+ #milieu{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ .containerT td, .container th {
+       padding-bottom: 2%;
+       padding-top: 2%;
+   padding-left:2%;  
+ }
+ 
+ 
+
+ 
+ .containerT tr:hover {
+    background-color: #fdfdfd;
+ -webkit-box-shadow: 0 6px 6px -6px #fdfdfd;
+        -moz-box-shadow: 0 6px 6px -6px #fdfdfd;
+             box-shadow: 0 6px 6px -6px #fdfdfd;
+ }
+ 
+ .containerT td:hover {
+   background-color: #5acaf7;
+   color: #fdfdfd;
+   font-weight: bold;
+   
+   box-shadow: #2e5bd8 -1px 1px, #2e5bd8 -2px 2px, #2e5bd8 -3px 3px, #2e5bd8 -4px 4px, #2e5bd8 -5px 5px, #2e5bd8 -6px 6px;
+   transform: translate3d(6px, -6px, 0);
+   
+   transition-delay: 0s;
+       transition-duration: 0.4s;
+       transition-property: all;
+   transition-timing-function: line;
+ }
+ 
+ 
+
+ @media (max-width: 800px) {
+ .containerT td:nth-child(4),
+ .containerT th:nth-child(4) { display: none; }
+ }

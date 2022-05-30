@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% load i18n %}
+<!-- Page Header Start -->
+<section class="inner-banner">
+  <div class="container">
+      <h2 class="inner-banner__title">{% trans "Close Account" %}</h2><!-- /.inner-banner__title -->
+      <ul class="list-unstyled thm-breadcrumb">
+          <li><a href="{% url 'home' %}">{% trans "Home" %}</a></li>
+          <li class="active"><a href="#">{% trans "Close" %}</a></li>
+      </ul><!-- /.list-unstyled -->
+  </div><!-- /.container -->
+</section><!-- /.inner-banner -->
+<!-- Page Header End -->
+
+
+    <!-- Start Content -->
+    <div class="section-padding">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-5 col-md-12 col-xs-12">
+            <div class="login-area">
+              <div class="close-account">
+                <p>{% trans "You are sure you want to close your account?" %}</p>
+                <label class="radio-inline">
+                <input name="inlineRadioOptions" value="option1" type="radio"> {% trans "Yes" %}
+                </label>
+                <label class="radio-inline">
+                <input name="inlineRadioOptions" value="option2" type="radio"> {% trans "No" %}
+                </label>
+                <br>
+                <button type="submit" class="check-box">{% trans "Submit" %}</button>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>      
+    </div>
+    <!-- End Content -->
+
+    {% endblock content %}

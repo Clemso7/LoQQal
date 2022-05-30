@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% load i18n %}
+
+        <section class="inner-banner">
+            <div class="container">
+                <h2 class="inner-banner__title">{% trans "About" %}</h2><!-- /.inner-banner__title -->
+                <ul class="list-unstyled thm-breadcrumb">
+                    <li><a href="{% url 'home' %}">{% trans "Home" %}</a></li>
+                    <li class="active"><a href="#">{% trans "About" %}</a></li>
+                </ul><!-- /.list-unstyled -->
+            </div><!-- /.container -->
+        </section><!-- /.inner-banner -->
+
+        <section class="blog-details">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="blog-one__single">
+                            <div class="blog-one__image">
+                                <img src="assets/images/blog-d-1-1.jpg" alt="">
+
+                            </div><!-- /.blog-one__image -->
+                            <div class="blog-one__content">
+                                
+                                <h3 class="blog-one__title">
+                                    {% trans "LoQQal: From our heart to your home" %}
+                                </h3><!-- /.blog-one__title -->
+                                <p class="blog-one__text" id='cool'>
+                                {% trans "WE SERVE PEOPLE AND BUSINESSES." %}<br> 
+
+                                {% trans "We deliver your essential goods with heart; your grocery store, your pharmacy and much more. We deliver on demand, the SAME DAY. We have two types of delivery : Normal delivery and Express delivery." %}
+
+                                <br>{% trans "Express delivery allows the customer to receive his package in TWO HOURS." %}
+
+                                <br>{% trans "Normal delivery allows the customer to receive his package the SAME DAY, the EVENING." %}
+
+                                <br>{% trans " We deliver with heart: this philosophy suggests that we treat you as we want to be treated and treat your packages as ours. " %}
+
+                                <br>{% trans "To be more precise, we treat your packages very carefully so that they are delivered to you whole and intact. Otherwise, in the event of loss or breakage, you are fully reimbursed. We deliver with heart means that the reimbursement is made within a maximum of 48 hours and in proportion to the damage." %} 
+  
+                                    </p>
+                                <!-- /.blog-one__text -->
+                                <p class="blog-one__text" id='cool'> 
+
+                                    {% trans "We deliver with heart means that we do not abandon your package when you are absent but communicate with you to find the best way to store it. We deliver with heart means that we are in tune with certain values ​​of our society, such as ecology. At LoQQal, we are bike delivery drivers, passionate and enthusiastic. If you are looking for a client centered and eco-friendly service, LoQQal is your best choice." %}
+
+                                 </p><!-- /.blog-one__text -->
+
+                            </div><!-- /.blog-one__content -->
+                        </div><!-- /.blog-one__single -->
+                    </div><!-- /.col-lg-4 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.blog-details -->
+
+        
+    </div><!-- /.page-wrapper -->
+    {% endblock content %}

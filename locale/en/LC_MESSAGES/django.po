@@ -1,0 +1,1067 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-02-14 23:09-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\authentication\forms.py:19
+#: .\authentication\templates\authentication\login.html:40
+msgid "Username"
+msgstr ""
+
+#: .\authentication\forms.py:26 .\authentication\forms.py:90
+#: .\authentication\templates\authentication\login.html:46
+msgid "Password"
+msgstr ""
+
+#: .\authentication\forms.py:36 .\authentication\forms.py:99
+msgid "Confirm password"
+msgstr ""
+
+#: .\authentication\forms.py:48 .\authentication\forms.py:73
+#: .\authentication\forms.py:125
+msgid "Email Address"
+msgstr ""
+
+#: .\authentication\forms.py:63
+msgid "This Email address is already in use."
+msgstr ""
+
+#: .\authentication\forms.py:81
+msgid "There is no user registered with the specified email address!"
+msgstr ""
+
+#: .\authentication\forms.py:109
+msgid "First Name"
+msgstr ""
+
+#: .\authentication\forms.py:117
+msgid "Last Name"
+msgstr ""
+
+#: .\authentication\forms.py:146
+msgid "individual or compagny"
+msgstr ""
+
+#: .\authentication\forms.py:154
+msgid "Business name or username"
+msgstr ""
+
+#: .\authentication\forms.py:162 .\delivery\models.py:31
+msgid "Business or personal phone"
+msgstr ""
+
+#: .\authentication\forms.py:170 .\delivery\models.py:32
+msgid "Business or home address"
+msgstr ""
+
+#: .\authentication\templates\authentication\activate-account.html:9
+msgid "Activated account"
+msgstr ""
+
+#: .\authentication\templates\authentication\activate-account.html:11
+#: .\authentication\templates\authentication\login.html:10
+#: .\authentication\templates\authentication\password-reset-complete.html:10
+#: .\authentication\templates\authentication\password-reset-confirm.html:10
+#: .\authentication\templates\authentication\password-reset-message.html:10
+#: .\authentication\templates\authentication\password-reset.html:10
+#: .\authentication\templates\authentication\signup.html:11
+#: .\delivery\templates\delivery\post-ads.html:11
+#: .\delivery\templates\delivery\post-demands.html:12
+#: .\livrer\templates\livrer\about.html:10
+#: .\livrer\templates\livrer\ads-search.html:10
+#: .\livrer\templates\livrer\contact.html:11
+#: .\livrer\templates\livrer\faq.html:10
+#: .\livrer\templates\livrer\privacy-policy.html:11
+#: .\profiles\templates\profiles\account-close.html:10
+#: .\profiles\templates\profiles\account-dashboard.html:10
+#: .\profiles\templates\profiles\account-setting.html:10
+#: .\templates\404.html:10 .\templates\header.html:101
+msgid "Home"
+msgstr ""
+
+#: .\authentication\templates\authentication\activate-account.html:12
+msgid "Account"
+msgstr ""
+
+#: .\authentication\templates\authentication\activate-account.html:24
+msgid "Thanks for being with us."
+msgstr ""
+
+#: .\authentication\templates\authentication\activate-account.html:26
+msgid "Your account has been activated successfully. Please, complete"
+msgstr ""
+
+#: .\authentication\templates\authentication\activate-account.html:26
+msgid "your informations"
+msgstr ""
+
+#: .\authentication\templates\authentication\activate-account.html:26
+msgid "to continue."
+msgstr ""
+
+#: .\authentication\templates\authentication\confirm-email.html:5
+msgid "Hi"
+msgstr ""
+
+#: .\authentication\templates\authentication\confirm-email.html:7
+msgid "Thanks for your registration with LoQQal."
+msgstr ""
+
+#: .\authentication\templates\authentication\confirm-email.html:9
+msgid "Please click on the link below to confirm your registration."
+msgstr ""
+
+#: .\authentication\templates\authentication\confirm-email.html:13
+msgid "If you think, it's not you, then just ignore this email."
+msgstr ""
+
+#: .\authentication\templates\authentication\login.html:8
+#: .\authentication\templates\authentication\login.html:11
+#: .\authentication\templates\authentication\login.html:58
+#: .\authentication\templates\authentication\password-reset-complete.html:11
+#: .\authentication\templates\authentication\password-reset-complete.html:24
+#: .\templates\header.html:137
+msgid "Login"
+msgstr ""
+
+#: .\authentication\templates\authentication\login.html:51
+msgid "Don't have an account?"
+msgstr ""
+
+#: .\authentication\templates\authentication\login.html:51
+msgid "Sign Up"
+msgstr ""
+
+#: .\authentication\templates\authentication\login.html:54
+msgid "Forgot Password?"
+msgstr ""
+
+#: .\authentication\templates\authentication\password-reset-complete.html:8
+msgid "Message"
+msgstr ""
+
+#: .\authentication\templates\authentication\password-reset-complete.html:22
+msgid "We've set you up with a new password."
+msgstr ""
+
+#: .\authentication\templates\authentication\password-reset-complete.html:24
+msgid "You may go ahead and"
+msgstr ""
+
+#: .\authentication\templates\authentication\password-reset-complete.html:24
+msgid "now"
+msgstr ""
+
+#: .\authentication\templates\authentication\password-reset-confirm.html:8
+#: .\authentication\templates\authentication\password-reset-message.html:8
+#: .\authentication\templates\authentication\password-reset.html:8
+msgid "Reset password"
+msgstr ""
+
+#: .\authentication\templates\authentication\password-reset-confirm.html:11
+#: .\authentication\templates\authentication\password-reset-message.html:11
+msgid "Reset"
+msgstr ""
+
+#: .\authentication\templates\authentication\password-reset-confirm.html:24
+msgid "Enter your new password."
+msgstr ""
+
+#: .\authentication\templates\authentication\password-reset-confirm.html:26
+msgid ""
+"Please enter your new password twice so we can verify you typed it in "
+"correctly."
+msgstr ""
+
+#: .\authentication\templates\authentication\password-reset-confirm.html:34
+msgid "Update Password"
+msgstr ""
+
+#: .\authentication\templates\authentication\password-reset-message.html:24
+msgid "Password reset confirmation sent"
+msgstr ""
+
+#: .\authentication\templates\authentication\password-reset-message.html:26
+msgid "We’ve emailed you instructions for re-setting your password"
+msgstr ""
+
+#: .\authentication\templates\authentication\password-reset-message.html:29
+msgid "If you don’t receive an email, please check your spam folder."
+msgstr ""
+
+#: .\authentication\templates\authentication\password-reset.html:11
+msgid "Reset "
+msgstr ""
+
+#: .\authentication\templates\authentication\password-reset.html:23
+msgid "Did you forget your password?"
+msgstr ""
+
+#: .\authentication\templates\authentication\password-reset.html:25
+msgid ""
+"Enter your email address registered with us, and we'll send email "
+"instructions for setting a new one."
+msgstr ""
+
+#: .\authentication\templates\authentication\password-reset.html:33
+msgid "Reset Password"
+msgstr ""
+
+#: .\authentication\templates\authentication\signup-success.html:14
+#: .\livrer\templates\livrer\demand-success.html:14
+msgid "Please check your email."
+msgstr ""
+
+#: .\authentication\templates\authentication\signup-success.html:16
+#: .\livrer\templates\livrer\demand-success.html:16
+msgid ""
+"We’ve sent a message to your email with a link to activate your account."
+msgstr ""
+
+#: .\authentication\templates\authentication\signup.html:9
+#: .\authentication\templates\authentication\signup.html:63
+#: .\livrer\templates\livrer\index.html:558
+msgid "Register"
+msgstr ""
+
+#: .\authentication\templates\authentication\signup.html:12
+msgid "Join Us"
+msgstr ""
+
+#: .\authentication\templates\authentication\signup.html:59
+msgid "By registering, you accept our"
+msgstr ""
+
+#: .\authentication\templates\authentication\signup.html:59
+msgid "Terms & Conditions"
+msgstr ""
+
+#: .\authentication\views.py:33
+msgid "Confirm your LoQQal account"
+msgstr ""
+
+#: .\authentication\views.py:71
+msgid "Invalid activation link. Please contact support."
+msgstr ""
+
+#: .\authentication\views.py:86
+msgid "Oops! Username or Password is invalid. Please try again."
+msgstr ""
+
+#: .\delivery\forms.py:21 .\delivery\models.py:51
+msgid "Type of delivery"
+msgstr ""
+
+#: .\delivery\forms.py:27 .\delivery\templates\delivery\post-ads.html:40
+msgid "Consignee name"
+msgstr ""
+
+#: .\delivery\forms.py:35 .\delivery\templates\delivery\post-ads.html:47
+msgid "Consignee phone"
+msgstr ""
+
+#: .\delivery\forms.py:43
+msgid "Consignee address"
+msgstr ""
+
+#: .\delivery\forms.py:50
+msgid "Consignee email"
+msgstr ""
+
+#: .\delivery\models.py:28
+msgid "Person or Compagny"
+msgstr ""
+
+#: .\delivery\models.py:29
+msgid "Picture"
+msgstr ""
+
+#: .\delivery\models.py:30
+msgid "Business name or Username"
+msgstr ""
+
+#: .\delivery\models.py:52
+msgid "Full name"
+msgstr ""
+
+#: .\delivery\models.py:53 .\livrer\templates\livrer\contact.html:55
+#: .\profiles\templates\profiles\account-dashboard.html:102
+#: .\templates\footer.html:58
+msgid "Phone"
+msgstr ""
+
+#: .\delivery\models.py:54 .\livrer\templates\livrer\contact.html:36
+#: .\profiles\templates\profiles\account-dashboard.html:101
+msgid "Address"
+msgstr ""
+
+#: .\delivery\models.py:55
+#: .\profiles\templates\profiles\account-sidebar.html:21
+#: .\templates\footer.html:61
+msgid "Email"
+msgstr ""
+
+#: .\delivery\models.py:56
+msgid "Description"
+msgstr ""
+
+#: .\delivery\templates\delivery\post-ads.html:9
+#: .\delivery\templates\delivery\post-demands.html:10
+#: .\livrer\templates\livrer\index.html:219
+#: .\profiles\templates\profiles\account-dashboard.html:79
+#: .\templates\header.html:105
+msgid "Delivery request"
+msgstr ""
+
+#: .\delivery\templates\delivery\post-ads.html:12
+msgid "Delivery request for business"
+msgstr ""
+
+#: .\delivery\templates\delivery\post-ads.html:31
+#: .\delivery\templates\delivery\post-demands.html:32
+msgid "Service type"
+msgstr ""
+
+#: .\delivery\templates\delivery\post-ads.html:53
+msgid "Consignee Address"
+msgstr ""
+
+#: .\delivery\templates\delivery\post-ads.html:59
+msgid "To send a notification at your customer"
+msgstr ""
+
+#: .\delivery\templates\delivery\post-ads.html:59
+msgid "Consignee Email"
+msgstr ""
+
+#: .\delivery\templates\delivery\post-ads.html:76
+#: .\delivery\templates\delivery\post-demands.html:71
+msgid "Send your request"
+msgstr ""
+
+#: .\delivery\templates\delivery\post-ads.html:147
+#: .\delivery\templates\delivery\post-demands.html:142
+msgid "The delivery request has been sent successfully."
+msgstr ""
+
+#: .\delivery\templates\delivery\post-ads.html:159
+#: .\delivery\templates\delivery\post-demands.html:154
+msgid ""
+"You have one or more error. Please provide all required fields to post a "
+"request."
+msgstr ""
+
+#: .\delivery\templates\delivery\post-demands.html:13
+msgid "Delivery request for individual"
+msgstr ""
+
+#: .\delivery\templates\delivery\post-demands.html:41
+msgid "Place where package will be picked up"
+msgstr ""
+
+#: .\delivery\templates\delivery\post-demands.html:41
+msgid "Store or Person name"
+msgstr ""
+
+#: .\delivery\templates\delivery\post-demands.html:48
+msgid "Your phone"
+msgstr ""
+
+#: .\delivery\templates\delivery\post-demands.html:54
+msgid "Store or person address"
+msgstr ""
+
+#: .\delivery\templates\delivery\post-demands.html:60
+msgid "You can provide all useful information"
+msgstr ""
+
+#: .\delivery\templates\delivery\post-demands.html:60
+msgid "Order number or useful information"
+msgstr ""
+
+#: .\livrer\templates\livrer\about.html:8
+#: .\livrer\templates\livrer\about.html:11 .\templates\footer.html:36
+#: .\templates\header.html:121
+msgid "About"
+msgstr ""
+
+#: .\livrer\templates\livrer\about.html:28
+msgid "LoQQal: From our heart to your home"
+msgstr ""
+
+#: .\livrer\templates\livrer\about.html:31
+#: .\livrer\templates\livrer\index.html:210
+msgid "WE SERVE PEOPLE AND BUSINESSES."
+msgstr ""
+
+#: .\livrer\templates\livrer\about.html:33
+msgid ""
+"We deliver your essential goods with heart; your grocery store, your "
+"pharmacy and much more. We deliver on demand, the SAME DAY. We have two "
+"types of delivery : Normal delivery and Express delivery."
+msgstr ""
+
+#: .\livrer\templates\livrer\about.html:35
+msgid ""
+"Express delivery allows the customer to receive his package in TWO HOURS."
+msgstr ""
+
+#: .\livrer\templates\livrer\about.html:37
+msgid ""
+"Normal delivery allows the customer to receive his package the SAME DAY, the "
+"EVENING."
+msgstr ""
+
+#: .\livrer\templates\livrer\about.html:39
+msgid ""
+" We deliver with heart: this philosophy suggests that we treat you as we "
+"want to be treated and treat your packages as ours. "
+msgstr ""
+
+#: .\livrer\templates\livrer\about.html:41
+msgid ""
+"To be more precise, we treat your packages very carefully so that they are "
+"delivered to you whole and intact. Otherwise, in the event of loss or "
+"breakage, you are fully reimbursed. We deliver with heart means that the "
+"reimbursement is made within a maximum of 48 hours and in proportion to the "
+"damage."
+msgstr ""
+
+#: .\livrer\templates\livrer\about.html:47
+msgid ""
+"We deliver with heart means that we do not abandon your package when you are "
+"absent but communicate with you to find the best way to store it. We deliver "
+"with heart means that we are in tune with certain values ​​of our society, "
+"such as ecology. At LoQQal, we are bike delivery drivers, passionate and "
+"enthusiastic. If you are looking for a client centered and eco-friendly "
+"service, LoQQal is your best choice."
+msgstr ""
+
+#: .\livrer\templates\livrer\ads-search.html:8
+#: .\livrer\templates\livrer\ads-search.html:11
+msgid "Package status"
+msgstr ""
+
+#: .\livrer\templates\livrer\ads-search.html:32
+#: .\livrer\templates\livrer\ads-search.html:55
+msgid "In progress"
+msgstr ""
+
+#: .\livrer\templates\livrer\ads-search.html:33
+#: .\livrer\templates\livrer\ads-search.html:53
+#: .\profiles\templates\profiles\account-dashboard.html:129
+msgid "Picked"
+msgstr ""
+
+#: .\livrer\templates\livrer\ads-search.html:34
+#: .\livrer\templates\livrer\ads-search.html:51
+#: .\profiles\templates\profiles\account-dashboard.html:127
+msgid "Delivered"
+msgstr ""
+
+#: .\livrer\templates\livrer\ads-search.html:37
+msgid "Package id :"
+msgstr ""
+
+#: .\livrer\templates\livrer\ads-search.html:38
+msgid "Requested :"
+msgstr ""
+
+#: .\livrer\templates\livrer\ads-search.html:49
+#: .\profiles\templates\profiles\account-dashboard.html:104
+#: .\templates\header.html:163
+msgid "Status"
+msgstr ""
+
+#: .\livrer\templates\livrer\ads-search.html:70
+msgid "Sorry! your package's id is wrong"
+msgstr ""
+
+#: .\livrer\templates\livrer\contact.html:9
+msgid "Contact Us"
+msgstr ""
+
+#: .\livrer\templates\livrer\contact.html:12 .\templates\footer.html:51
+#: .\templates\footer.html:57 .\templates\header.html:113
+msgid "Contact"
+msgstr ""
+
+#: .\livrer\templates\livrer\contact.html:27
+msgid "Get In Touch"
+msgstr ""
+
+#: .\livrer\templates\livrer\contact.html:30
+msgid "We would like to hear form you about any suggestion or complaint."
+msgstr ""
+
+#: .\livrer\templates\livrer\contact.html:45
+msgid "Have any Questions?"
+msgstr ""
+
+#: .\livrer\templates\livrer\faq.html:22
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: .\livrer\templates\livrer\faq.html:26
+msgid "What is normal or express delivery?"
+msgstr ""
+
+#: .\livrer\templates\livrer\faq.html:29
+msgid ""
+"- The normal delivery : The package is delivered the same day, the evening. "
+"The price is $7."
+msgstr ""
+
+#: .\livrer\templates\livrer\faq.html:31
+msgid ""
+"- The express delivery : The package is delivered the same day in two hour. "
+"The price is $20."
+msgstr ""
+
+#: .\livrer\templates\livrer\faq.html:37
+msgid "What are the packaging requirements?"
+msgstr ""
+
+#: .\livrer\templates\livrer\faq.html:40
+msgid ""
+"- Weight (including packaging and content): The packages delivered will not "
+"exceed 20 kg or 44 lb per package."
+msgstr ""
+
+#: .\livrer\templates\livrer\faq.html:42
+msgid ""
+" - Maximum dimensions: the dimensions (height + length + width) of the "
+"package must not exceed 50 cm or \n"
+"        19 inch and the longest size must not exceed 50 cm per package. "
+msgstr ""
+
+#: .\livrer\templates\livrer\faq.html:45
+msgid "- the value of the package must not exceed $ 1000 CAD per package."
+msgstr ""
+
+#: .\livrer\templates\livrer\faq.html:47
+msgid ""
+"\n"
+"        The weight and size declared by the Customer will be checked when "
+"the packages are picked up by LoQQal deliverers.\n"
+"        LoQQal deliverers have the right to refuse any package whose weight "
+"and size exceed the above-mentioned indications.\n"
+"        "
+msgstr ""
+
+#: .\livrer\templates\livrer\faq.html:55
+msgid "What is the price for a delivery?"
+msgstr ""
+
+#: .\livrer\templates\livrer\faq.html:58
+msgid ""
+"\n"
+"        We charge $7 per normal delivery and $20 per express delivery, plus "
+"the applicable taxes.      \n"
+"        For compagnies, we send you an invoice every week, including all the "
+"deliveries requested \n"
+"        during the week to facilitate the management of your accounting.\n"
+"        Upon agreement, you can make a unique payment every two weeks of the "
+"invoices regarding the same period.  \n"
+"        "
+msgstr ""
+
+#: .\livrer\templates\livrer\faq.html:65
+msgid "For individuals, the paiement is done after the delivery."
+msgstr ""
+
+#: .\livrer\templates\livrer\faq.html:70
+msgid "How do I request a delivery?"
+msgstr ""
+
+#: .\livrer\templates\livrer\faq.html:73
+msgid "First, create an account on our website."
+msgstr ""
+
+#: .\livrer\templates\livrer\faq.html:74
+msgid "Then, fill the delivery request form or call us at 438-530-7574."
+msgstr ""
+
+#: .\livrer\templates\livrer\faq.html:75
+msgid ""
+"NB: If you are a individual choose individual delivery request and If you "
+"are a Compagny choose Businesses delivery request."
+msgstr ""
+
+#: .\livrer\templates\livrer\faq.html:77
+msgid ""
+"And there we go! For your future delivery requests, just log in your LoQQal "
+"account and fill the said form."
+msgstr ""
+
+#: .\livrer\templates\livrer\faq.html:82
+msgid "How can i modify my delivery request?"
+msgstr ""
+
+#: .\livrer\templates\livrer\faq.html:85
+msgid ""
+"To modify or cancel a request, call our customer service at: 438-530-7574 or "
+"contact us at: info@loqqal.ca."
+msgstr ""
+
+#: .\livrer\templates\livrer\faq.html:87
+msgid ""
+"Please, make sure you precise in the Subject of the mail that you are "
+"requesting a cancellation or a modification of your delivery request."
+msgstr ""
+
+#: .\livrer\templates\livrer\faq.html:92
+msgid "When will our clients receive their packages?"
+msgstr ""
+
+#: .\livrer\templates\livrer\faq.html:95
+msgid ""
+"For the normal deliveries, we recommend making your delivery request before "
+"4:00 pm if you wish to have your packages delivered the same day."
+msgstr ""
+
+#: .\livrer\templates\livrer\faq.html:97
+msgid ""
+"\n"
+"        If you do make your request after 4:00 pm, your packages will be "
+"picked your package the day after.\n"
+"        We usually make the delivery rounds on the afternoons.\n"
+"        "
+msgstr ""
+
+#: .\livrer\templates\livrer\faq.html:102
+msgid "For the express deliveries, clients receive their packages in one hour."
+msgstr ""
+
+#: .\livrer\templates\livrer\faq.html:107
+msgid "How can I check the status of my delivery?"
+msgstr ""
+
+#: .\livrer\templates\livrer\faq.html:110
+msgid ""
+"\n"
+"        It is amazingly simple. First go on Loqqal.ca. Then enter your "
+"package identification number (ID) on the homepage.        \n"
+"        Finally, click on the button named status and you will have all the "
+"information regarding the delivery of your package.\n"
+"        "
+msgstr ""
+
+#: .\livrer\templates\livrer\faq.html:118
+msgid "How LoQQal delivers the packages?"
+msgstr ""
+
+#: .\livrer\templates\livrer\faq.html:121
+msgid "We deliver by bicycle with a carriage attached to it."
+msgstr ""
+
+#: .\livrer\templates\livrer\faq.html:123
+msgid ""
+"By doing so, we make sure that your package will travel in the best "
+"condition and arrived without any damage."
+msgstr ""
+
+#: .\livrer\templates\livrer\faq.html:128
+msgid "What happens if my package is damaged ?"
+msgstr ""
+
+#: .\livrer\templates\livrer\faq.html:131
+msgid ""
+"If a damage or a loss occurs, we will investigate to determine whether we "
+"are responsible for the damage or loss."
+msgstr ""
+
+#: .\livrer\templates\livrer\faq.html:133
+msgid ""
+"If our liability is confirmed, we will reimburse the total value of your "
+"package."
+msgstr ""
+
+#: .\livrer\templates\livrer\faq.html:135
+msgid ""
+"The whole process should not take more than 48 hours, unless there are "
+"unexpected events."
+msgstr ""
+
+#: .\livrer\templates\livrer\faq.html:137
+msgid ""
+"We recommend checking your package in the presence of our deliverer or as "
+"soon as you have it, if the delivery was done in your absence."
+msgstr ""
+
+#: .\livrer\templates\livrer\faq.html:139
+msgid ""
+"As soon as you notice a damage or a loss, please contact us by email or "
+"phone."
+msgstr ""
+
+#: .\livrer\templates\livrer\index.html:17
+msgid ""
+" Ecofriendly  <br>\n"
+"                        delivery <br>\n"
+"                        for everyone  "
+msgstr ""
+
+#: .\livrer\templates\livrer\index.html:20
+msgid "Because we love nature and we love delivery"
+msgstr ""
+
+#: .\livrer\templates\livrer\index.html:24
+msgid "Make delivery request"
+msgstr ""
+
+#: .\livrer\templates\livrer\index.html:78
+msgid "Why you should choose us"
+msgstr ""
+
+#: .\livrer\templates\livrer\index.html:80
+msgid "The Only Delivery Service You Need"
+msgstr ""
+
+#: .\livrer\templates\livrer\index.html:86
+msgid " Eco-friendly <br> Delivery "
+msgstr ""
+
+#: .\livrer\templates\livrer\index.html:93
+msgid " Secured <br> Delivery  "
+msgstr ""
+
+#: .\livrer\templates\livrer\index.html:100
+msgid " Fast <br> Delivery "
+msgstr ""
+
+#: .\livrer\templates\livrer\index.html:107
+msgid " Parcel <br> Insured "
+msgstr ""
+
+#: .\livrer\templates\livrer\index.html:114
+msgid " Tracking <br> System "
+msgstr ""
+
+#: .\livrer\templates\livrer\index.html:132
+msgid "Areas covered by LoQQal"
+msgstr ""
+
+#: .\livrer\templates\livrer\index.html:135
+msgid "Some areas of Montreal"
+msgstr ""
+
+#: .\livrer\templates\livrer\index.html:142
+msgid "Boroughs"
+msgstr ""
+
+#: .\livrer\templates\livrer\index.html:143
+msgid "Zip code"
+msgstr ""
+
+#: .\livrer\templates\livrer\index.html:179
+msgid "What we deliver : Grocery, Clothing,"
+msgstr ""
+
+#: .\livrer\templates\livrer\index.html:180
+msgid "Office supply... ;"
+msgstr ""
+
+#: .\livrer\templates\livrer\index.html:185
+msgid "More informations"
+msgstr ""
+
+#: .\livrer\templates\livrer\index.html:203
+msgid "LoQQal Vision"
+msgstr ""
+
+#: .\livrer\templates\livrer\index.html:205
+msgid "SIMPLE solutions to"
+msgstr ""
+
+#: .\livrer\templates\livrer\index.html:207
+msgid "COMPLEX problems"
+msgstr ""
+
+#: .\livrer\templates\livrer\index.html:211
+msgid ""
+"What is the best we can offer to our community, while we are all facing the "
+"challenges related to climate changes and the decline of the local economy?"
+msgstr ""
+
+#: .\livrer\templates\livrer\index.html:213
+msgid ""
+"Our commitment remains the timeless and effective way to face such great "
+"challenges."
+msgstr ""
+
+#: .\livrer\templates\livrer\index.html:214
+msgid ""
+"Our moto is to great challenges, great commitment. We work with the heart, "
+"which guarantees a high-quality service that meets your expectations."
+msgstr ""
+
+#: .\livrer\templates\livrer\index.html:215
+msgid ""
+"Commitment is priceless, which is why we say “simple solutions to complex "
+"problems”."
+msgstr ""
+
+#: .\livrer\templates\livrer\index.html:216
+msgid "Commitment is the essence of our business."
+msgstr ""
+
+#: .\livrer\templates\livrer\index.html:233
+msgid "Packages delivered"
+msgstr ""
+
+#: .\livrer\templates\livrer\index.html:239
+msgid "Number of km driven"
+msgstr ""
+
+#: .\livrer\templates\livrer\index.html:245
+msgid "g of CO2 less"
+msgstr ""
+
+#: .\livrer\templates\livrer\index.html:554
+msgid "Call us today & "
+msgstr ""
+
+#: .\livrer\templates\livrer\index.html:555
+msgid "Discover Possibilities for you or your business."
+msgstr ""
+
+#: .\livrer\templates\livrer\index.html:556
+msgid "and get started with 2 deliveries for free for you or your business"
+msgstr ""
+
+#: .\livrer\templates\livrer\privacy-policy.html:12
+msgid "Terms of Service"
+msgstr ""
+
+#: .\livrer\views.py:60
+msgid " Please, enter your package id"
+msgstr ""
+
+#: .\livrer\views.py:61
+msgid " Sorry, your id is not a number"
+msgstr ""
+
+#: .\profiles\templates\profiles\account-close.html:8
+msgid "Close Account"
+msgstr ""
+
+#: .\profiles\templates\profiles\account-close.html:11
+msgid "Close"
+msgstr ""
+
+#: .\profiles\templates\profiles\account-close.html:25
+msgid "You are sure you want to close your account?"
+msgstr ""
+
+#: .\profiles\templates\profiles\account-close.html:27
+msgid "Yes"
+msgstr ""
+
+#: .\profiles\templates\profiles\account-close.html:30
+msgid "No"
+msgstr ""
+
+#: .\profiles\templates\profiles\account-close.html:33
+msgid "Submit"
+msgstr ""
+
+#: .\profiles\templates\profiles\account-dashboard.html:8
+#: .\profiles\templates\profiles\account-dashboard.html:11
+#: .\profiles\templates\profiles\account-dashboard.html:30
+#: .\profiles\templates\profiles\account-sidebar.html:30
+#: .\templates\header.html:128
+msgid "Dashboard"
+msgstr ""
+
+#: .\profiles\templates\profiles\account-dashboard.html:40
+msgid "Apr"
+msgstr ""
+
+#: .\profiles\templates\profiles\account-dashboard.html:41
+msgid "May"
+msgstr ""
+
+#: .\profiles\templates\profiles\account-dashboard.html:44
+msgid "Aug"
+msgstr ""
+
+#: .\profiles\templates\profiles\account-dashboard.html:78
+msgid "Weekly total request"
+msgstr ""
+
+#: .\profiles\templates\profiles\account-dashboard.html:87
+msgid "Weekly total price"
+msgstr ""
+
+#: .\profiles\templates\profiles\account-dashboard.html:100
+msgid "Name"
+msgstr ""
+
+#: .\profiles\templates\profiles\account-dashboard.html:103
+msgid "Date Posted"
+msgstr ""
+
+#: .\profiles\templates\profiles\account-dashboard.html:105
+msgid "Type"
+msgstr ""
+
+#: .\profiles\templates\profiles\account-dashboard.html:131
+msgid "In prog.."
+msgstr ""
+
+#: .\profiles\templates\profiles\account-dashboard.html:153
+msgid "first"
+msgstr ""
+
+#: .\profiles\templates\profiles\account-dashboard.html:154
+msgid "previous"
+msgstr ""
+
+#: .\profiles\templates\profiles\account-dashboard.html:162
+msgid "next"
+msgstr ""
+
+#: .\profiles\templates\profiles\account-dashboard.html:163
+msgid "last"
+msgstr ""
+
+#: .\profiles\templates\profiles\account-setting.html:8
+msgid "Profile Settings"
+msgstr ""
+
+#: .\profiles\templates\profiles\account-setting.html:11
+msgid "Settings"
+msgstr ""
+
+#: .\profiles\templates\profiles\account-setting.html:29
+#: .\profiles\templates\profiles\account-setting.html:41
+msgid "Update Profile"
+msgstr ""
+
+#: .\profiles\templates\profiles\account-sidebar.html:22
+msgid "Joined"
+msgstr ""
+
+#: .\profiles\templates\profiles\account-sidebar.html:36
+#: .\templates\header.html:129
+msgid "Account Settings"
+msgstr ""
+
+#: .\profiles\templates\profiles\account-sidebar.html:43
+#: .\templates\header.html:130
+msgid "Logout"
+msgstr ""
+
+#: .\profiles\templates\profiles\account-sidebar.html:49
+msgid "Account close"
+msgstr ""
+
+#: .\service\settings.py:149
+msgid "English"
+msgstr ""
+
+#: .\service\settings.py:150
+msgid "French"
+msgstr ""
+
+#: .\templates\404.html:25
+msgid "Something Went Wrong..."
+msgstr ""
+
+#: .\templates\404.html:28
+msgid "Go to"
+msgstr ""
+
+#: .\templates\404.html:28
+msgid "Homepage"
+msgstr ""
+
+#: .\templates\footer.html:17
+msgid "Language"
+msgstr ""
+
+#: .\templates\footer.html:37
+msgid "Privacy Policy"
+msgstr ""
+
+#: .\templates\footer.html:41
+msgid "Openning hours"
+msgstr ""
+
+#: .\templates\footer.html:43
+msgid "Monday to friday : 10 - 17h"
+msgstr ""
+
+#: .\templates\footer.html:44
+msgid "Saturday : 10 - 13h"
+msgstr ""
+
+#: .\templates\footer.html:48
+msgid "Links"
+msgstr ""
+
+#: .\templates\footer.html:50 .\templates\header.html:117
+msgid "Faq"
+msgstr ""
+
+#: .\templates\footer.html:71
+msgid "All rights reserved"
+msgstr ""
+
+#: .\templates\footer.html:72
+msgid "Developed by"
+msgstr ""
+
+#: .\templates\header.html:9
+msgid ""
+"LoQQal is eco-friendly delivery at Montreal. We use bicycle to make our "
+"deliveries. We treat your packages as ours"
+msgstr ""
+
+#: .\templates\header.html:10
+msgid "LoQQal: Ecofriendly delivery for everyone"
+msgstr ""
+
+#: .\templates\header.html:107
+msgid "If you are an individual"
+msgstr ""
+
+#: .\templates\header.html:107
+msgid "For individual"
+msgstr ""
+
+#: .\templates\header.html:108
+msgid "If you are a compagny"
+msgstr ""
+
+#: .\templates\header.html:108
+msgid "For Businesses"
+msgstr ""
+
+#: .\templates\header.html:134
+msgid "My Account"
+msgstr ""
+
+#: .\templates\header.html:136
+msgid "Signup"
+msgstr ""
+
+#: .\templates\header.html:162
+msgid "Enter your package id"
+msgstr ""
