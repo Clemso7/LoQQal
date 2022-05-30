@@ -321,10 +321,10 @@ def facture(cid, prix, prixE, business, adress, c_email, receiver_email):
     pdf.cell(0, 6, 'From : LoQQal ' , 0, 1, 'L', True)
     pdf.set_font('courier', '', 13)
     pdf.set_fill_color(200, 220, 255)
-    pdf.cell(0, 6, 'Address: 5337 Sherbrooke Ouest' , 0, 1, 'L', True)
+    pdf.cell(0, 6, 'Address: 1000 Sherbrooke Est' , 0, 1, 'L', True)
     pdf.set_font('courier', '', 13)
     pdf.set_fill_color(200, 220, 255)
-    pdf.cell(0, 6, 'Email: info@loqqal.ca' , 0, 1, 'L', True)
+    pdf.cell(0, 6, 'Email: info@app.com' , 0, 1, 'L', True)
     pdf.cell(40, 10, '',0,1)
     pdf.set_font('courier', 'B', 12)
     pdf.cell(200, 8, f"{''.ljust(41)} {''.rjust(31)}", 0, 1)
@@ -367,5 +367,5 @@ def facture(cid, prix, prixE, business, adress, c_email, receiver_email):
 # six parameter is client's business email on invoice
 # Seven parameter is client's business email
 
-facture('3', 5, 12, 'Fleur Sauvage-Aliments Naturels', '5561 Monkland ave', settings.CLIENT1_EMAIL, settings.CLIENT1_EMAIL)
+facture('3', 5, 12, 'Super Market', '8531 land avenue', settings.CLIENT1_EMAIL, settings.CLIENT1_EMAIL)
 
